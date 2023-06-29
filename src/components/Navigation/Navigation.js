@@ -13,6 +13,7 @@ import { BiPaint } from "react-icons/bi";
 import logo from "../../assets/logos/logo-png.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
     return (
@@ -43,13 +44,13 @@ const Navigation = () => {
                                             Calligraphy
                                         </Dropdown.Header>
                                         <Dropdown.Item>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                to="/search/verses"
                                                 className="nav-link"
                                                 role="button"
                                             >
                                                 Qur'anic Verses
-                                            </a>
+                                            </Link>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
                                             <a
@@ -61,13 +62,13 @@ const Navigation = () => {
                                             </a>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                to="/search/duas"
                                                 className="nav-link"
                                                 role="button"
                                             >
                                                 Popular Duas
-                                            </a>
+                                            </Link>
                                         </Dropdown.Item>
 
                                         <Dropdown.Divider className="mt-3" />
@@ -77,22 +78,22 @@ const Navigation = () => {
                                             Architecture
                                         </Dropdown.Header>
                                         <Dropdown.Item>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                href="/search/middle-eastern"
                                                 className="nav-link text-wrap dropdown-item-double"
                                                 role="button"
                                             >
                                                 Middle Eastern
-                                            </a>
+                                            </Link>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                href="/search/asian"
                                                 className="nav-link text-wrap"
                                                 role="button"
                                             >
                                                 Asian
-                                            </a>
+                                            </Link>
                                         </Dropdown.Item>
                                         <Dropdown.Divider className="d-md-none" />
                                     </Col>
@@ -103,22 +104,22 @@ const Navigation = () => {
                                             Geometric Designs
                                         </Dropdown.Header>
                                         <Dropdown.Item>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                href="/search/vegetal"
                                                 className="nav-link"
                                                 role="button"
                                             >
                                                 Vegetal Patterns
-                                            </a>
+                                            </Link>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                href="/search/geometric"
                                                 className="nav-link"
                                                 role="button"
                                             >
                                                 Geometric Shapes
-                                            </a>
+                                            </Link>
                                         </Dropdown.Item>
                                         <Dropdown.Divider className="mt-3" />
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
@@ -127,22 +128,22 @@ const Navigation = () => {
                                             Other
                                         </Dropdown.Header>
                                         <Dropdown.Item>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                href="/custom"
                                                 className="nav-link text-wrap"
                                                 role="button"
                                             >
                                                 Custom Design
-                                            </a>
+                                            </Link>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                href="/search"
                                                 className="nav-link text-wrap"
                                                 role="button"
                                             >
                                                 {">>"} View All Paintings
-                                            </a>
+                                            </Link>
                                         </Dropdown.Item>
                                     </Col>
                                 </Row>

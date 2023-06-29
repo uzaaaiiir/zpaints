@@ -10,21 +10,21 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 // React Router dom
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+    BrowserRouter,
+    createBrowserRouter,
+    RouterProvider,
+} from "react-router-dom";
 
 function App() {
     return (
-        <Router>
+        <BrowserRouter>
             <div className="App">
                 <Navigation />
-                <Switch>
-                    <Route exact path="/">
-                        <Homepage />
-                    </Route>
-                </Switch>
+                <Homepage />
                 <Footer />
             </div>
-        </Router>
+        </BrowserRouter>
     );
 }
 
