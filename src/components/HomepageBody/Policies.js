@@ -6,12 +6,12 @@ import { IconContext } from "react-icons";
 
 const Policies = () => {
     return (
-        <Container fluid className="mb-5">
+        <Container fluid className="mb-5 pb-5 py-4">
             <Row
                 className="px-5 py-3 "
                 style={{
                     backgroundColor: "#0a0a0a",
-                    opacity: "80%",
+                    opacity: "90%",
                     filter: "grayscale(60%) brightness(0.9)",
                 }}
             >
