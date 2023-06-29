@@ -7,7 +7,6 @@ import {
     Col,
     Dropdown,
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { AiOutlineShopping, AiOutlineBell } from "react-icons/ai";
 import logo from "../../assets/logos/logo-png.png";
@@ -36,7 +35,6 @@ const Navigation = () => {
                                     <Col xs="12" md="6" className="text-left">
                                         <Dropdown.Header>
                                             <AiOutlineBell />
-                                            {"  "}
                                             Catering
                                         </Dropdown.Header>
                                         <Dropdown.Item>
