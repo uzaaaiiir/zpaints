@@ -1,0 +1,90 @@
+body {
+    padding-top: 8rem;
+}
+
+.navbar {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item--underline:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 0.5px;
+    left: 100%;
+    position: absolute;
+    background: #3b0764;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-item--underline:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* .nav-item:link,
+.nav-item:visited {
+    color: #f8fafc;
+}
+
+.nav-item:hover,
+.nav-item:active {
+    color: #e2e8f0;
+} */
+
+.btn-nav-cta:link,
+.btn-nav-cta:visited {
+    display: inline-block;
+    margin: 1rem 2rem;
+    align-items: start;
+    text-decoration: none;
+    background-color: #f8fafc;
+    border-radius: 4px;
+    font-weight: 700;
+    color: #09090b;
+    border: 1px black solid;
+    transition: all 0.3s;
+}
+
+.btn-nav-cta:hover,
+.btn-nav-cta:active {
+    text-shadow: 0 0 0.5px #09090b;
+    background-color: #3b0764;
+    color: #fafafa;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.heading-primary {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 600;
+    font-size: 3.8rem;
+}
+
+.heading-secondary {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+.heading-tertiary {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+}
+
+.heading-appointment-details {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.btn-style {
+    font-family: "Raleway", sans-serif;
+    font-family: 1rem;
+}
