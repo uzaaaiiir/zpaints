@@ -12,6 +12,8 @@ import "./App.css";
 // React Router dom
 import {
     BrowserRouter,
+    Routes,
+    Route,
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
@@ -21,7 +23,9 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Navigation />
-                <Homepage />
+                <Routes>
+                    <Route exact path="/" Component={Homepage} />
+                </Routes>
                 <Footer />
             </div>
         </BrowserRouter>

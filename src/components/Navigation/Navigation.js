@@ -19,9 +19,9 @@ const Navigation = () => {
     return (
         <Navbar collapseOnSelect expand="lg" fixed="top" bg="white">
             <Container>
-                <Navbar.Brand href="#home">
+                <Link to="/" className="me-4">
                     <img src={logo} alt="" width={245} />
-                </Navbar.Brand>
+                </Link>
                 <Navbar.Toggle aria-controls="navbarScroll" bg="dark" />
                 <Navbar.Collapse
                     id="navbarScroll"
@@ -53,13 +53,13 @@ const Navigation = () => {
                                             </Link>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
-                                            <a
-                                                href="/"
+                                            <Link
+                                                to="/search/sayings"
                                                 className="nav-link"
                                                 role="button"
                                             >
                                                 Sayings
-                                            </a>
+                                            </Link>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
                                             <Link
@@ -74,13 +74,12 @@ const Navigation = () => {
                                         <Dropdown.Divider className="mt-3" />
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
                                             <AiOutlineBell />
-                                            {"  "}
                                             Architecture
                                         </Dropdown.Header>
                                         <Dropdown.Item>
                                             <Link
-                                                href="/search/middle-eastern"
-                                                className="nav-link text-wrap dropdown-item-double"
+                                                to="/search/middle-eastern"
+                                                className="nav-link text-wrap"
                                                 role="button"
                                             >
                                                 Middle Eastern
@@ -88,7 +87,7 @@ const Navigation = () => {
                                         </Dropdown.Item>
                                         <Dropdown.Item>
                                             <Link
-                                                href="/search/asian"
+                                                to="/search/asian"
                                                 className="nav-link text-wrap"
                                                 role="button"
                                             >
@@ -105,7 +104,7 @@ const Navigation = () => {
                                         </Dropdown.Header>
                                         <Dropdown.Item>
                                             <Link
-                                                href="/search/vegetal"
+                                                to="/search/vegetal"
                                                 className="nav-link"
                                                 role="button"
                                             >
@@ -114,7 +113,7 @@ const Navigation = () => {
                                         </Dropdown.Item>
                                         <Dropdown.Item>
                                             <Link
-                                                href="/search/geometric"
+                                                to="/search/geometric"
                                                 className="nav-link"
                                                 role="button"
                                             >
@@ -129,7 +128,7 @@ const Navigation = () => {
                                         </Dropdown.Header>
                                         <Dropdown.Item>
                                             <Link
-                                                href="/custom"
+                                                to="/custom"
                                                 className="nav-link text-wrap"
                                                 role="button"
                                             >
@@ -138,7 +137,7 @@ const Navigation = () => {
                                         </Dropdown.Item>
                                         <Dropdown.Item>
                                             <Link
-                                                href="/search"
+                                                to="/search"
                                                 className="nav-link text-wrap"
                                                 role="button"
                                             >
@@ -149,21 +148,30 @@ const Navigation = () => {
                                 </Row>
                             </Container>
                         </NavDropdown>
-                        <Nav.Link className="nav-item nav-item--underline">
+                        <Link
+                            to="/workshops"
+                            className="nav-link nav-item nav-item--underline"
+                        >
                             Workshops
-                        </Nav.Link>
-                        <Nav.Link className="nav-item nav-item--underline">
+                        </Link>
+                        <Link
+                            to="faqs"
+                            className="nav-link nav-item nav-item--underline"
+                        >
                             FAQs
-                        </Nav.Link>
-                        <Nav.Link className="nav-item nav-item--underline">
+                        </Link>
+                        <Link
+                            to="contact"
+                            className="nav-link nav-item nav-item--underline"
+                        >
                             Contact
-                        </Nav.Link>
-                        <a
-                            href="/pages/book.html"
+                        </Link>
+                        <Link
+                            to="/pages/book.html"
                             class="btn-nav-cta ms-5 px-4 py-3 rounded-0"
                         >
                             SHOP ALL
-                        </a>
+                        </Link>
                     </Nav>
                     <Nav className="justify-content-end align-items-center gap-3">
                         <div

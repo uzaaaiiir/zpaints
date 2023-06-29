@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 const Footer = () => {
     return (
         <Container fluid style={{ backgroundColor: "#1e1b4b" }}>
-            <footer className="py-5">
+            <footer className="pt-5 pb-3">
                 <div className="row justify-content-center">
                     <div className="col-12 col-md">
                         <a href="/index.html" classNameName="">
