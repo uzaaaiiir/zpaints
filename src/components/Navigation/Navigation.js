@@ -1,16 +1,22 @@
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import {
+    Container,
+    Navbar,
+    Nav,
+    NavDropdown,
+    Row,
+    Col,
+    Dropdown,
+} from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
-import { AiOutlineShopping } from "react-icons/ai";
+import { AiOutlineShopping, AiOutlineBell } from "react-icons/ai";
 import logo from "../../assets/logos/logo-png.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
 const Navigation = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" fixed="top" className="">
+        <Navbar collapseOnSelect expand="lg" fixed="top">
             <Container>
                 <Navbar.Brand href="#home">
                     <img src={logo} alt="" width={245} />
@@ -29,141 +35,112 @@ const Navigation = () => {
                                 <Row>
                                     <Col xs="12" md="6" className="text-left">
                                         <Dropdown.Header>
-                                            <FontAwesomeIcon
-                                                color="black"
-                                                icon={"concierge-bell"}
-                                                size="1x"
-                                                className="pr-1"
-                                            />
+                                            <AiOutlineBell />
                                             {"  "}
                                             Catering
                                         </Dropdown.Header>
                                         <Dropdown.Item>
-                                            <Link href="/">
-                                                <a
-                                                    className="nav-link"
-                                                    role="button"
-                                                >
-                                                    Corporate
-                                                </a>
-                                            </Link>
+                                            <a
+                                                href="/"
+                                                className="nav-link"
+                                                role="button"
+                                            >
+                                                Corporate
+                                            </a>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
-                                            <Link href="/">
-                                                <a
-                                                    className="nav-link"
-                                                    role="button"
-                                                >
-                                                    Private
-                                                </a>
-                                            </Link>
+                                            <a
+                                                href="/"
+                                                className="nav-link"
+                                                role="button"
+                                            >
+                                                Private
+                                            </a>
                                         </Dropdown.Item>
 
                                         <Dropdown.Divider />
                                         <Dropdown.Header>
-                                            <FontAwesomeIcon
-                                                color="black"
-                                                icon={"chalkboard-teacher"}
-                                                size="1x"
-                                                className="pr-1"
-                                            />
+                                            <AiOutlineBell />
                                             {"  "}
                                             Classes
                                         </Dropdown.Header>
                                         <Dropdown.Item>
-                                            <Link href="/">
-                                                <a
-                                                    className="nav-link"
-                                                    role="button"
-                                                >
-                                                    Barista 101
-                                                </a>
-                                            </Link>
+                                            <a
+                                                href="/"
+                                                className="nav-link"
+                                                role="button"
+                                            >
+                                                Barista 101
+                                            </a>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
-                                            <Link href="/">
-                                                <a
-                                                    className="nav-link"
-                                                    role="button"
-                                                >
-                                                    History of Coffee
-                                                </a>
-                                            </Link>
+                                            <a
+                                                href="/"
+                                                className="nav-link"
+                                                role="button"
+                                            >
+                                                History of Coffee
+                                            </a>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
-                                            <Link href="/">
-                                                <a
-                                                    className="nav-link"
-                                                    role="button"
-                                                >
-                                                    Intro to Cafe Snobbery
-                                                </a>
-                                            </Link>
+                                            <a
+                                                href="/"
+                                                className="nav-link"
+                                                role="button"
+                                            >
+                                                Intro to Cafe Snobbery
+                                            </a>
                                         </Dropdown.Item>
                                         <Dropdown.Divider className="d-md-none" />
                                     </Col>
 
                                     <Col xs="12" md="6" className="text-left">
                                         <Dropdown.Header>
-                                            <FontAwesomeIcon
-                                                color="black"
-                                                icon={"building"}
-                                                size="1x"
-                                                className="pr-1"
-                                            />
+                                            <AiOutlineBell />
                                             {"  "}
                                             Rentals
                                         </Dropdown.Header>
                                         <Dropdown.Item>
-                                            <Link href="/">
-                                                <a
-                                                    className="nav-link"
-                                                    role="button"
-                                                >
-                                                    Fireside Room
-                                                </a>
-                                            </Link>
+                                            <a
+                                                href="/"
+                                                className="nav-link"
+                                                role="button"
+                                            >
+                                                Fireside Room
+                                            </a>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
-                                            <Link href="/">
-                                                <a
-                                                    className="nav-link"
-                                                    role="button"
-                                                >
-                                                    Roasting Room
-                                                </a>
-                                            </Link>
+                                            <a
+                                                href="/"
+                                                className="nav-link"
+                                                role="button"
+                                            >
+                                                Roasting Room
+                                            </a>
                                         </Dropdown.Item>
                                         <Dropdown.Divider />
                                         <Dropdown.Header>
-                                            <FontAwesomeIcon
-                                                color="black"
-                                                icon={"sun"}
-                                                size="1x"
-                                                className="pr-1"
-                                            />
+                                            <AiOutlineBell />
                                             {"  "}
                                             Seasonal
                                         </Dropdown.Header>
                                         <Dropdown.Item>
-                                            <Link href="/">
-                                                <a
-                                                    className="nav-link"
-                                                    role="button"
-                                                >
-                                                    Coldbrew Night
-                                                </a>
-                                            </Link>
+                                            <a
+                                                href="/"
+                                                className="nav-link"
+                                                role="button"
+                                            >
+                                                Coldbrew Night
+                                            </a>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
-                                            <Link href="/">
-                                                <a
-                                                    className="nav-link text-wrap"
-                                                    role="button"
-                                                >
-                                                    Campfire Coffee Class
-                                                </a>
-                                            </Link>
+                                            <a
+                                                href="/"
+                                                className="nav-link text-wrap"
+                                                role="button"
+                                            >
+                                                Campfire Coffee Class
+                                            </a>
                                         </Dropdown.Item>
                                     </Col>
                                 </Row>
