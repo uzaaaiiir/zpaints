@@ -20,18 +20,20 @@ const Navigation = () => {
                 <Navbar.Brand href="#home">
                     <img src={logo} alt="" width={245} />
                 </Navbar.Brand>
-                <Navbar.Toggle
-                    aria-controls="responsive-navbar-nav"
-                    bg="dark"
-                />
+                <Navbar.Toggle aria-controls="navbarScroll" bg="dark" />
                 <Navbar.Collapse
-                    id="responsive-navbar-nav"
+                    id="navbarScroll"
                     className="heading-tertiary bg-md-light"
                 >
-                    <Nav className="justify-content-end align-items-center flex-grow-1 gap-3">
+                    <Nav
+                        className="justify-content-end align-items-center flex-grow-1 gap-3 overflow-auto"
+                        style={{ maxHeight: "650px" }}
+                        navbarScroll
+                    >
                         <NavDropdown
                             title="Shop Islamic Art"
                             className="nav-item nav-item--underline"
+                            id="navbarScrollingDropdown"
                         >
                             <Container className="eventsNav pt-0 mt-0">
                                 <Row>
