@@ -1,4 +1,5 @@
 import heroImg from "../../assets/img/hero.jpg";
+import "./styles.css";
 
 const Hero = () => {
     return (
@@ -19,25 +20,21 @@ const Hero = () => {
                                 fontFamily: "Raleway, sans-serif",
                             }}
                         >
-                            BOOK NOW
+                            SHOP ALL
                         </a>
                         <a
                             href="/pages/services.html"
                             className="btn btn-outline-dark px-4 py-3 btn-style rounded-0"
                             style={{ fontFamily: "Raleway, sans-serif" }}
                         >
-                            SERVICES
+                            CUSTOM DESIGNS
                         </a>
                     </div>
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6 hero-img d-flex justify-content-center">
                     <img
                         src={heroImg}
-                        className="d-block mx-lg-auto img-fluid"
-                        style={{
-                            filter: "brightness(60%)",
-                            filter: "grayscale(80%)",
-                        }}
+                        className="d-block mx-lg-auto img-fluid hero-img-filter"
                         alt=""
                         width="600"
                         height="400"

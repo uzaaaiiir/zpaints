@@ -1,3 +1,8 @@
 .btn-bg {
     background-color: "#3b0764";
 }
+
+.hero-img-filter {
+    filter: brightness(60%);
+    filter: grayscale(80%);
+}
