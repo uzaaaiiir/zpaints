@@ -18,3 +18,39 @@
     font-family: "Raleway", sans-serif;
     font-size: 1.1rem;
 }
+
+@media (max-width: 87em) {
+    .nav-logo {
+        max-width: 248;
+    }
+
+    .heading-primary {
+        font-size: 3rem;
+    }
+
+    .heading-secondary {
+        font-size: 2.5rem;
+    }
+
+    .heading-tertiary {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 50em) {
+    .nav-logo {
+        max-width: 75%;
+    }
+
+    .heading-primary {
+        font-size: 2.8rem;
+    }
+
+    .heading-secondary {
+        font-size: 2rem;
+    }
+
+    .heading-tertiary {
+        font-size: 1rem;
+    }
+}
