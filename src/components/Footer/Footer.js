@@ -93,7 +93,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-6 col-lg justify-content-center text-light py-5 text-center">
+                    <div className="col-6 col-lg justify-content-center text-light py-5 text-center d-none d-lg-block">
                         <h5
                             style={{
                                 fontFamily: "Raleway, sans-serif",
