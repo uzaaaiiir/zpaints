@@ -15,15 +15,18 @@ import "./styles.css";
 
 const Navigation = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" fixed="top">
+        <Navbar collapseOnSelect expand="lg" fixed="top" bg="white">
             <Container>
                 <Navbar.Brand href="#home">
                     <img src={logo} alt="" width={245} />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle
+                    aria-controls="responsive-navbar-nav"
+                    bg="dark"
+                />
                 <Navbar.Collapse
                     id="responsive-navbar-nav"
-                    className="heading-tertiary"
+                    className="heading-tertiary bg-md-light"
                 >
                     <Nav className="justify-content-end align-items-center flex-grow-1 gap-3">
                         <NavDropdown
