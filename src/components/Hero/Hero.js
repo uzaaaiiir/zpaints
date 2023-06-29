@@ -12,7 +12,7 @@ const Hero = () => {
                     <p className="mb-5 heading-tertiary">
                         Offering High-Quality Modern Islamic Art Pieces
                     </p>
-                    <div className="d-grid gap-2 d-md-flex justify-content-center">
+                    <div className="d-grid d-md-flex justify-content-lg-center justify-content-xxs-center">
                         <a
                             href="/pages/book.html"
                             class="btn btn-dark btn-bg px-4 py-3 me-md-2 btn-style rounded-0"
@@ -22,6 +22,7 @@ const Hero = () => {
                         >
                             SHOP ALL
                         </a>
+
                         <a
                             href="/pages/services.html"
                             className="btn btn-outline-dark px-4 py-3 btn-style rounded-0"

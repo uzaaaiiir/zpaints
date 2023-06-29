@@ -9,6 +9,7 @@ import {
 } from "react-bootstrap";
 import { IconContext } from "react-icons";
 import { AiOutlineShopping, AiOutlineBell } from "react-icons/ai";
+import { BiPaint } from "react-icons/bi";
 import logo from "../../assets/logos/logo-png.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
@@ -26,21 +27,20 @@ const Navigation = () => {
                     className="heading-tertiary bg-md-light"
                 >
                     <Nav
-                        className="justify-content-end align-items-center flex-grow-1 gap-3 overflow-auto"
-                        style={{ maxHeight: "650px" }}
+                        className="justify-content-end align-items-center flex-grow-1 gap-3"
                         navbarScroll
                     >
                         <NavDropdown
                             title="Shop Islamic Art"
                             className="nav-item nav-item--underline"
-                            id="navbarScrollingDropdown"
+                            navbarScroll
                         >
                             <Container className="eventsNav pt-0 mt-0">
                                 <Row>
                                     <Col xs="12" md="6" className="text-left">
-                                        <Dropdown.Header>
-                                            <AiOutlineBell />
-                                            Catering
+                                        <Dropdown.Header className="d-flex gap-2 align-items-center">
+                                            <BiPaint />
+                                            Calligraphy
                                         </Dropdown.Header>
                                         <Dropdown.Item>
                                             <a
@@ -48,7 +48,7 @@ const Navigation = () => {
                                                 className="nav-link"
                                                 role="button"
                                             >
-                                                Corporate
+                                                Qur'anic Verses
                                             </a>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
@@ -57,83 +57,32 @@ const Navigation = () => {
                                                 className="nav-link"
                                                 role="button"
                                             >
-                                                Private
+                                                Sayings
+                                            </a>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item>
+                                            <a
+                                                href="/"
+                                                className="nav-link"
+                                                role="button"
+                                            >
+                                                Popular Duas
                                             </a>
                                         </Dropdown.Item>
 
-                                        <Dropdown.Divider />
-                                        <Dropdown.Header>
+                                        <Dropdown.Divider className="mt-3" />
+                                        <Dropdown.Header className="d-flex gap-2 align-items-center">
                                             <AiOutlineBell />
                                             {"  "}
-                                            Classes
+                                            Architecture
                                         </Dropdown.Header>
                                         <Dropdown.Item>
                                             <a
                                                 href="/"
-                                                className="nav-link"
+                                                className="nav-link text-wrap dropdown-item-double"
                                                 role="button"
                                             >
-                                                Barista 101
-                                            </a>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item>
-                                            <a
-                                                href="/"
-                                                className="nav-link"
-                                                role="button"
-                                            >
-                                                History of Coffee
-                                            </a>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item>
-                                            <a
-                                                href="/"
-                                                className="nav-link"
-                                                role="button"
-                                            >
-                                                Intro to Cafe Snobbery
-                                            </a>
-                                        </Dropdown.Item>
-                                        <Dropdown.Divider className="d-md-none" />
-                                    </Col>
-
-                                    <Col xs="12" md="6" className="text-left">
-                                        <Dropdown.Header>
-                                            <AiOutlineBell />
-                                            {"  "}
-                                            Rentals
-                                        </Dropdown.Header>
-                                        <Dropdown.Item>
-                                            <a
-                                                href="/"
-                                                className="nav-link"
-                                                role="button"
-                                            >
-                                                Fireside Room
-                                            </a>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item>
-                                            <a
-                                                href="/"
-                                                className="nav-link"
-                                                role="button"
-                                            >
-                                                Roasting Room
-                                            </a>
-                                        </Dropdown.Item>
-                                        <Dropdown.Divider />
-                                        <Dropdown.Header>
-                                            <AiOutlineBell />
-                                            {"  "}
-                                            Seasonal
-                                        </Dropdown.Header>
-                                        <Dropdown.Item>
-                                            <a
-                                                href="/"
-                                                className="nav-link"
-                                                role="button"
-                                            >
-                                                Coldbrew Night
+                                                Middle Eastern
                                             </a>
                                         </Dropdown.Item>
                                         <Dropdown.Item>
@@ -142,7 +91,57 @@ const Navigation = () => {
                                                 className="nav-link text-wrap"
                                                 role="button"
                                             >
-                                                Campfire Coffee Class
+                                                Asian
+                                            </a>
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider className="d-md-none" />
+                                    </Col>
+
+                                    <Col xs="12" md="6" className="text-left">
+                                        <Dropdown.Header className="d-flex gap-2 align-items-center">
+                                            <AiOutlineBell />
+                                            Geometric Designs
+                                        </Dropdown.Header>
+                                        <Dropdown.Item>
+                                            <a
+                                                href="/"
+                                                className="nav-link"
+                                                role="button"
+                                            >
+                                                Vegetal Patterns
+                                            </a>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item>
+                                            <a
+                                                href="/"
+                                                className="nav-link"
+                                                role="button"
+                                            >
+                                                Geometric Shapes
+                                            </a>
+                                        </Dropdown.Item>
+                                        <Dropdown.Divider className="mt-3" />
+                                        <Dropdown.Header className="d-flex gap-2 align-items-center">
+                                            <AiOutlineBell />
+                                            {"  "}
+                                            Other
+                                        </Dropdown.Header>
+                                        <Dropdown.Item>
+                                            <a
+                                                href="/"
+                                                className="nav-link text-wrap"
+                                                role="button"
+                                            >
+                                                Custom Design
+                                            </a>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item>
+                                            <a
+                                                href="/"
+                                                className="nav-link text-wrap"
+                                                role="button"
+                                            >
+                                                {">>"} View All Paintings
                                             </a>
                                         </Dropdown.Item>
                                     </Col>
@@ -164,6 +163,7 @@ const Navigation = () => {
                         >
                             SHOP ALL
                         </a>
+                        {/* <CustomButton text="SHOP ALL" outline={true} /> */}
                     </Nav>
                     <Nav className="justify-content-end align-items-center gap-3">
                         <div
