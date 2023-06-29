@@ -35,7 +35,7 @@ const Hero = () => {
                 <div class="col-10 col-sm-8 col-lg-6 hero-img d-flex justify-content-center">
                     <img
                         src={heroImg}
-                        className="d-block mx-lg-auto img-fluid hero-img-filter"
+                        className="d-block mx-lg-auto img-fluid hero-img-filter "
                         alt=""
                         width="600"
                         height="400"

@@ -163,7 +163,6 @@ const Navigation = () => {
                         >
                             SHOP ALL
                         </a>
-                        {/* <CustomButton text="SHOP ALL" outline={true} /> */}
                     </Nav>
                     <Nav className="justify-content-end align-items-center gap-3">
                         <div
