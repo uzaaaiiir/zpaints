@@ -11,13 +11,7 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 // React Router dom
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-    createBrowserRouter,
-    RouterProvider,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
     return (
