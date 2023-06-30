@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Components
 import Navigation from "./components/Navigation/Navigation";
 import Homepage from "./components/HomepageBody/Homepage";
+import FacetedSearch from "./components/FacetedSearch/FacetedSearch";
 import Footer from "./components/Footer/Footer";
 
 // Custom Designs
@@ -25,6 +26,7 @@ function App() {
                 <Navigation />
                 <Routes>
                     <Route exact path="/" Component={Homepage} />
+                    <Route path="/search" Component={FacetedSearch} />
                 </Routes>
                 <Footer />
             </div>

@@ -82,14 +82,14 @@ const Footer = () => {
                         <p className="footer-address">K1Y XXX</p>
                         <ul className="list-unstyled text-small">
                             <li>
-                                <a className="link-secondary text-decoration-none py-1">
+                                <p className="link-secondary text-decoration-none py-1 mb-0">
                                     (434)546-4356
-                                </a>
+                                </p>
                             </li>
                             <li>
-                                <a className="link-secondary text-decoration-none py-1">
+                                <p className="link-secondary text-decoration-none mt-0">
                                     contact@lift.agency
-                                </a>
+                                </p>
                             </li>
                         </ul>
                     </div>

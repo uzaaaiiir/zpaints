@@ -167,7 +167,7 @@ const Navigation = () => {
                             Contact
                         </Link>
                         <Link
-                            to="/pages/book.html"
+                            to="/search"
                             class="btn-nav-cta ms-5 px-4 py-3 rounded-0"
                         >
                             SHOP ALL

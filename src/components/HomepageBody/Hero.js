@@ -1,6 +1,8 @@
 import heroImg from "../../assets/img/hero.jpg";
 import "./hero-styles.css";
 
+import { Link } from "react-router-dom";
+
 const Hero = () => {
     return (
         <main className="container col-xxl-8 px-4 py-1 background-container">
@@ -13,23 +15,23 @@ const Hero = () => {
                         Offering High-Quality Modern Islamic Art Pieces
                     </p>
                     <div className="d-grid d-md-flex justify-content-center gap-3">
-                        <a
-                            href="/pages/book.html"
+                        <Link
+                            to="/search"
                             class="btn btn-dark btn-bg px-4 py-3 me-md-2 btn-style rounded-0"
                             style={{
                                 fontFamily: "Raleway, sans-serif",
                             }}
                         >
                             SHOP ALL
-                        </a>
+                        </Link>
 
-                        <a
-                            href="/pages/services.html"
+                        <Link
+                            to="/custom"
                             className="btn btn-outline-dark px-4 py-3 btn-style rounded-0"
                             style={{ fontFamily: "Raleway, sans-serif" }}
                         >
                             CUSTOM DESIGNS
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6 hero-img d-flex justify-content-center">
