@@ -21,22 +21,23 @@ const CategoryCard = ({ title, imgCategory }) => {
                     backgroundImage: `url(${category})`,
                     backgroundPosition: "center",
                     backgroundSize: "cover",
+                    minHeight: "20rem",
                 }}
             >
                 <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 className="pt-5 mt-5 mb-5 lh-1 fw-bold heading-tertiary fs-1">
+                    <h3 className="pt-5 mt-5 lh-1 fw-bold heading-tertiary fs-1">
                         {title}
                     </h3>
-                    <ul className="d-flex list-unstyled mt-auto">
-                        {/* <li className="d-flex align-items-center">
+                    {/* <ul className="d-flex list-unstyled mt-auto">
+                        <li className="d-flex align-items-center">
                             <svg
                                 className="bi me-2"
                                 width="1em"
                                 height="1em"
                             ></svg>
                             <small>4d</small>
-                        </li> */}
-                    </ul>
+                        </li>
+                    </ul> */}
                 </div>
             </div>
         </div>

@@ -5,3 +5,9 @@
 .btn {
     border-radius: 0px;
 }
+
+.list-group-item.active {
+    color: black;
+    background-color: #eee;
+    border-color: black;
+}
