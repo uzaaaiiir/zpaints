@@ -20,41 +20,50 @@ const FacetedSearch = () => {
 
 const AllDropdowns = () => {
     return (
-        <div className="container row g-2 row-cols-3 row-cols-lg-6 align-items-center justify-content-center">
+        <div className="container d-flex gap-3">
             <p className="heading-tertiary fs-5 fw-normal m-0">Filter:</p>
-            <FilterDropdown
-                title="Category"
-                filters={["Calligraphy", "Architecture", "Geometric"]}
-                className="col rounded-0"
-            />
-            <FilterDropdown
-                title="Content"
-                filters={[
-                    "Islamic Verses",
-                    "Sayings",
-                    "Popular Duas",
-                    "Vegetal Patterns",
-                    "Geometric Shapes",
-                    "Middle Eastern Architecture",
-                    "Asian Architecture",
-                ]}
-                className="col"
-            />
-            <FilterDropdown
-                title="Sets"
-                filters={["Single", "Dual", "Triple", "Quad"]}
-                className="col"
-            />
-            <FilterDropdown
-                title="Colors"
-                filters={["Red", "Green", "Blue", "Yellow", "Orange", "Black"]}
-                className="col"
-            />
-            <FilterDropdown
-                title="Price"
-                filters={["<$50", "$50 - $100", "$200+"]}
-                className="col"
-            />
+            <div className="container row g-2 row-cols-3 row-cols-md-5">
+                <FilterDropdown
+                    title="Category"
+                    filters={["Calligraphy", "Architecture", "Geometric"]}
+                    className="col rounded-0"
+                />
+                <FilterDropdown
+                    title="Content"
+                    filters={[
+                        "Islamic Verses",
+                        "Sayings",
+                        "Popular Duas",
+                        "Vegetal Patterns",
+                        "Geometric Shapes",
+                        "Middle Eastern Architecture",
+                        "Asian Architecture",
+                    ]}
+                    className="col"
+                />
+                <FilterDropdown
+                    title="Sets"
+                    filters={["Single", "Dual", "Triple", "Quad"]}
+                    className="col"
+                />
+                <FilterDropdown
+                    title="Colors"
+                    filters={[
+                        "Red",
+                        "Green",
+                        "Blue",
+                        "Yellow",
+                        "Orange",
+                        "Black",
+                    ]}
+                    className="col"
+                />
+                <FilterDropdown
+                    title="Price"
+                    filters={["<$50", "$50 - $100", "$200+"]}
+                    className="col"
+                />
+            </div>
         </div>
     );
 };
