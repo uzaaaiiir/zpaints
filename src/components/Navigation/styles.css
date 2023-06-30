@@ -115,6 +115,11 @@ body {
     padding-left: 0em;
 }
 
+.dropdown--set-overflow {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
 @media only screen and (min-width: 600px) {
     .eventsNav {
         width: 22em;

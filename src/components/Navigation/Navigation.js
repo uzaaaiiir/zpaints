@@ -17,7 +17,13 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" fixed="top" bg="white">
+        <Navbar
+            collapseOnSelect
+            expand="lg"
+            fixed="top"
+            bg="white"
+            className=""
+        >
             <Container>
                 <Link to="/" className="me-4">
                     <img src={logo} alt="" width={245} />
@@ -31,12 +37,21 @@ const Navigation = () => {
                         className="justify-content-end align-items-center flex-grow-1 gap-3"
                         navbarScroll
                     >
+                        <Link
+                            to="/search"
+                            className="nav-link nav-item nav-item--underline d-lg-none"
+                        >
+                            Shop Islamic Art
+                        </Link>
                         <NavDropdown
                             title="Shop Islamic Art"
-                            className="nav-item nav-item--underline"
+                            className="nav-item nav-item--underline d-none d-lg-block"
                             navbarScroll
                         >
-                            <Container className="eventsNav pt-0 mt-0">
+                            <Container
+                                className="eventsNav pt-0 mt-0"
+                                style={{ minHeight: "100%" }}
+                            >
                                 <Row>
                                     <Col xs="12" md="6" className="text-left">
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
