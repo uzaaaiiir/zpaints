@@ -1,24 +1,7 @@
 import { DropdownButton, ButtonGroup, ListGroup } from "react-bootstrap";
 import "./styles.css";
 
-const Dropdowns = ({ filtersApplied, editFilters }) => {
-    const handleChange = (category, checked) => {
-        let filters = null;
-        if (filtersApplied === null) {
-            filters = [];
-        } else {
-            filters = filtersApplied;
-        }
-
-        if (checked === true) {
-            filters.push(category);
-        } else if (checked === false) {
-            filters = filters.filter((filter) => filter !== category);
-        }
-
-        editFilters(filters);
-    };
-
+const Dropdowns = ({ handleChange }) => {
     return (
         <div className="container d-flex gap-3">
             <p className="heading-tertiary fs-5 fw-normal m-0">Filter:</p>
