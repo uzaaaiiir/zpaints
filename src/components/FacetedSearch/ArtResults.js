@@ -5,9 +5,11 @@ import ArtPagination from "./ArtPagination";
 const ArtResults = ({ dataToPresent }) => {
     const result = dataToPresent.map((data) => <ArtItemCard data={data} />);
 
+    // States used for Pagination
     const [currentPage, setCurrentPage] = useState(1);
     const [resultsPerPage] = useState(3);
 
+    // Used for managing pagination
     const pages = Math.ceil(result.length / resultsPerPage);
     const indexOfLastResult = currentPage * resultsPerPage;
     const indexOfFirstResult = indexOfLastResult - resultsPerPage;

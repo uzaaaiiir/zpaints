@@ -1,6 +1,6 @@
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-const Badges = ({ filtersApplied }) => {
+const Badges = ({ filtersApplied, handleFilterClose }) => {
     return (
         <div className=" d-flex gap-2 justify-content-center align-items-center">
             {filtersApplied &&
@@ -12,7 +12,12 @@ const Badges = ({ filtersApplied }) => {
                     >
                         {filter}
                         <span className="vr mx-2"></span>
-                        <button className="border-0 bg-light-subtle fs-6">
+                        <button
+                            className="border-0 bg-light-subtle fs-6"
+                            onClick={(e) =>
+                                handleFilterClose(e.target.parentNode, filter)
+                            }
+                        >
                             <AiOutlineCloseCircle />
                         </button>
                     </span>

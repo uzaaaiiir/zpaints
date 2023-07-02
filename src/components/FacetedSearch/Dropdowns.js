@@ -43,6 +43,8 @@ const Dropdowns = ({ handleChange }) => {
                         "Black",
                         "White",
                         "Brown",
+                        "Gold",
+                        "Silver",
                     ]}
                     clickFn={handleChange}
                     className="col"
@@ -71,13 +73,23 @@ const FilterDropdown = ({ title, filters, clickFn }) => {
         >
             <ListGroup variant="flush">
                 {filters.map((filter) => (
-                    <ListGroup.Item className="d-flex gap-3" eventKey={filter}>
+                    <ListGroup.Item
+                        className="d-flex gap-3"
+                        eventKey={filter}
+                        title={title}
+                    >
                         <input
                             className="form-check-input flex-shrink-0"
                             type="checkbox"
-                            value=""
+                            value={filter}
                             onChange={(event) =>
-                                clickFn(filter, event.target.checked)
+                                clickFn(
+                                    filter,
+                                    event.target.checked,
+                                    event.target.parentElement.getAttribute(
+                                        "title"
+                                    )
+                                )
                             }
                         />
                         {filter}
