@@ -5,7 +5,7 @@ const Dropdowns = ({ handleChange }) => {
     return (
         <div className="container d-flex gap-3">
             <p className="heading-tertiary fs-5 fw-normal m-0">Filter:</p>
-            <div className="container row g-4 row-cols-3 row-cols-md-5">
+            <div className="container row g-4 row-cols-2 row-cols-md-5">
                 <FilterDropdown
                     title="Category"
                     filters={["Calligraphy", "Architecture", "Geometric"]}
@@ -41,13 +41,15 @@ const Dropdowns = ({ handleChange }) => {
                         "Yellow",
                         "Orange",
                         "Black",
+                        "White",
+                        "Brown",
                     ]}
                     clickFn={handleChange}
                     className="col"
                 />
                 <FilterDropdown
                     title="Price"
-                    filters={["<$50", "$50 - $100", "$200+"]}
+                    filters={["<$50", "$50 - $100", "$100 - $200", "$200+"]}
                     clickFn={handleChange}
                     className="col"
                 />

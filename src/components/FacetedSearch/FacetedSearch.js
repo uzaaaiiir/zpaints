@@ -8,12 +8,12 @@ import ArtResults from "./ArtResults";
 
 const FacetedSearch = () => {
     const [appliedFilters, setAppliedFilters] = useState([]);
+    const initialData = [...data];
     const [dataset, setDataset] = useState(data);
 
     const handleChange = (category, checked) => {
         /* Instantiate filters */
         let filters = [...appliedFilters];
-        console.log(filters);
 
         /* If a checkbox is checked, add it to filters array */
         if (checked) {
@@ -22,13 +22,30 @@ const FacetedSearch = () => {
             filters = filters.filter((filter) => filter !== category);
         }
 
-        // dataToFilter;
-        console.log(filters);
-
         setAppliedFilters(filters);
+        handleImageFiltering(filters);
     };
 
-    console.log(appliedFilters);
+    const handleImageFiltering = (filters) => {
+        if (filters.length === 0) {
+            setDataset([...initialData]);
+        } else {
+            let dataFiltered = [...initialData];
+
+            dataFiltered = dataFiltered.filter((data) => {
+                let filterResult;
+                filters.forEach((filter) => {
+                    filterResult = true;
+                    if (!data.categories.includes(filter)) {
+                        filterResult = false;
+                    }
+                });
+                return filterResult;
+            });
+
+            setDataset(dataFiltered);
+        }
+    };
 
     return (
         <Container className="my-5">
@@ -47,7 +64,7 @@ const FacetedSearch = () => {
                 </p>
                 <Badges className="col" filtersApplied={appliedFilters} />
             </div>
-            <ArtResults dataToPresent={dataset} filterResults={setDataset} />
+            <ArtResults dataToPresent={dataset} />
         </Container>
     );
 };
