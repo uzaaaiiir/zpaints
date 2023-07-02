@@ -9,14 +9,18 @@ const ArtPagination = ({ pages, currentPage, setCurrentPage }) => {
                 key={i}
                 active={i === currentPage}
                 onClick={() => setCurrentPage(i)}
-                linkClassName="btn btn-outline-dark"
-                linkStyle={{ fontFamily: "Raleway,sans-serif" }}
+                linkClassName="bg-light text-dark"
+                linkStyle={{
+                    fontFamily: "Raleway,sans-serif",
+                }}
             >
                 {i}
             </Pagination.Item>
         );
     }
-    return <Pagination className="justify-content-center">{items}</Pagination>;
+    return (
+        <Pagination className="justify-content-center mt-5">{items}</Pagination>
+    );
 };
 
 export default ArtPagination;

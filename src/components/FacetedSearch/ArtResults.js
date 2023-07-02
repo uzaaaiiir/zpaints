@@ -34,9 +34,14 @@ const ArtResults = ({ dataToPresent }) => {
 
 const ArtItemCard = ({ data }) => {
     return (
-        <div class="col">
+        <div class="col card-group">
             <div class="card border-0 rounded-0 shadow-sm">
-                <img src={data.img} alt="" className="rounded-0" role="img" />
+                <img
+                    src={data.img}
+                    alt=""
+                    className="card-img-top rounded-0"
+                    role="img"
+                />
                 <div class="card-body">
                     <p class="card-text fs-5 fw-bold">{data.title}</p>
                     <div className="d-flex gap-2 justify-content-center small">
