@@ -7,7 +7,7 @@ const ArtResults = ({ dataToPresent }) => {
 
     // States used for Pagination
     const [currentPage, setCurrentPage] = useState(1);
-    const [resultsPerPage] = useState(3);
+    const [resultsPerPage] = useState(6);
 
     // Used for managing pagination
     const pages = Math.ceil(result.length / resultsPerPage);

@@ -1,5 +1,6 @@
 import Container from "react-bootstrap/Container";
 import CategoryCard from "./CategoryCard/CategoryCard";
+import { Link } from "react-router-dom";
 
 const Categories = () => {
     return (
@@ -10,8 +11,8 @@ const Categories = () => {
             </h2>
 
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                <a
-                    href="/"
+                <Link
+                    to="/search"
                     style={{ textDecoration: "none" }}
                     className="d-block"
                 >
@@ -19,9 +20,9 @@ const Categories = () => {
                         title="Shop All Islamic Art"
                         imgCategory="all"
                     />
-                </a>
-                <a
-                    href="/"
+                </Link>
+                <Link
+                    to="/custom"
                     style={{ textDecoration: "none" }}
                     className="d-block"
                 >
@@ -29,8 +30,14 @@ const Categories = () => {
                         title="Request Custom Design"
                         imgCategory="custom"
                     />
-                </a>
-                <CategoryCard title="Workshops" imgCategory="workshops" />
+                </Link>
+                <Link
+                    to="/workshops"
+                    style={{ textDecoration: "none" }}
+                    className="d-block"
+                >
+                    <CategoryCard title="Workshops" imgCategory="workshops" />
+                </Link>
             </div>
         </Container>
     );

@@ -67,7 +67,7 @@ const FacetedSearch = () => {
                 SHOP MODERN ISLAMIC ART
             </h2>
             <Dropdowns handleChange={handleChange} />
-            <hr className="hr my-5 pt-5 pb-0" />
+            <hr className="hr mt-5 mb-3 pt-5 pb-0" />
             <div className="container d-flex gap-3 align-items-center">
                 <p className="heading-tertiary fs-6 fw-normal m-0">
                     Your Filters:
