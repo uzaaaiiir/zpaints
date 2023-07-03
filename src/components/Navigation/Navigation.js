@@ -60,7 +60,7 @@ const Navigation = () => {
                                         </Dropdown.Header>
                                         <Dropdown.Item>
                                             <Link
-                                                to="/search/verses"
+                                                to="/search"
                                                 className="nav-link"
                                                 role="button"
                                             >
@@ -69,7 +69,7 @@ const Navigation = () => {
                                         </Dropdown.Item>
                                         <Dropdown.Item>
                                             <Link
-                                                to="/search/sayings"
+                                                to="/search"
                                                 className="nav-link"
                                                 role="button"
                                             >
@@ -78,7 +78,7 @@ const Navigation = () => {
                                         </Dropdown.Item>
                                         <Dropdown.Item>
                                             <Link
-                                                to="/search/duas"
+                                                to="/search"
                                                 className="nav-link"
                                                 role="button"
                                             >
@@ -93,7 +93,7 @@ const Navigation = () => {
                                         </Dropdown.Header>
                                         <Dropdown.Item>
                                             <Link
-                                                to="/search/middle-eastern"
+                                                to="/search"
                                                 className="nav-link text-wrap"
                                                 role="button"
                                             >
@@ -102,7 +102,7 @@ const Navigation = () => {
                                         </Dropdown.Item>
                                         <Dropdown.Item>
                                             <Link
-                                                to="/search/asian"
+                                                to="/search"
                                                 className="nav-link text-wrap"
                                                 role="button"
                                             >
@@ -119,7 +119,7 @@ const Navigation = () => {
                                         </Dropdown.Header>
                                         <Dropdown.Item>
                                             <Link
-                                                to="/search/vegetal"
+                                                to="/search"
                                                 className="nav-link"
                                                 role="button"
                                             >
@@ -128,7 +128,7 @@ const Navigation = () => {
                                         </Dropdown.Item>
                                         <Dropdown.Item>
                                             <Link
-                                                to="/search/geometric"
+                                                to="/search"
                                                 className="nav-link"
                                                 role="button"
                                             >
