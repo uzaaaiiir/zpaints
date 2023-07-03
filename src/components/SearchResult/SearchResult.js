@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { data } from "../data.js";
 import { Container } from "react-bootstrap";
 import { BiArrowBack } from "react-icons/bi";
@@ -6,6 +6,7 @@ import RatingDivision from "./RatingDivision.js";
 import Ratings from "./Ratings.js";
 import ImageComponent from "./ImageComponent.js";
 import ItemDetails from "./ItemDetails.js";
+import Reviews from "./Reviews.js";
 
 const SearchResult = () => {
     // Dynamic Data
@@ -43,9 +44,13 @@ const SearchResult = () => {
                     <div className="">
                         <Ratings item={item} align="center" />
                         <p>Read Reviews</p>
-                        <button className="btn btn-outline-dark">
+                        {/* <button
+                            className="btn btn-outline-dark"
+                            onClick={handleShow}
+                        >
                             Write a Review
-                        </button>
+                        </button> */}
+                        <Reviews />
                     </div>
                     <RatingDivision rating={item.rating} className="" />
                 </div>
@@ -53,7 +58,5 @@ const SearchResult = () => {
         </Container>
     );
 };
-
-const Reviews = () => {};
 
 export default SearchResult;
