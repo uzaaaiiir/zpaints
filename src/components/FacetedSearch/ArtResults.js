@@ -1,6 +1,8 @@
 import { Rating } from "@mui/material";
 import { useState } from "react";
 import ArtPagination from "./ArtPagination";
+import { Link } from "react-router-dom";
+import "./art-results-styles.css";
 
 const ArtResults = ({ dataToPresent }) => {
     const result = dataToPresent.map((data) => <ArtItemCard data={data} />);
@@ -36,7 +38,11 @@ const ArtResults = ({ dataToPresent }) => {
 
 const ArtItemCard = ({ data }) => {
     return (
-        <div class="col card-group">
+        <Link
+            to={`/search/${data.id}`}
+            class="col card-group result--hover"
+            style={{ textDecoration: "none" }}
+        >
             <div class="card border-0 rounded-0 shadow-sm">
                 <img
                     src={data.img}
@@ -61,7 +67,7 @@ const ArtItemCard = ({ data }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
