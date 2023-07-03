@@ -193,10 +193,11 @@ const Navigation = () => {
                             className="vr align-self-center d-none d-lg-block me-3"
                             style={{ height: "2em" }}
                         ></div>
-
-                        <IconContext.Provider value={{ size: "2rem" }}>
-                            <AiOutlineShopping />
-                        </IconContext.Provider>
+                        <Link className="link-dark">
+                            <IconContext.Provider value={{ size: "2rem" }}>
+                                <AiOutlineShopping />
+                            </IconContext.Provider>
+                        </Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
