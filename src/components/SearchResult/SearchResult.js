@@ -7,6 +7,7 @@ import Ratings from "./Ratings.js";
 import ImageComponent from "./ImageComponent.js";
 import ItemDetails from "./ItemDetails.js";
 import Reviews from "./Reviews.js";
+import OffCanvasReviewList from "./OffCanvasReviewList.js";
 
 const SearchResult = () => {
     // Dynamic Data
@@ -41,15 +42,13 @@ const SearchResult = () => {
                     SEE WHAT OUR CUSTOMERS HAVE TO SAY
                 </h2>
                 <div className="container my-5 pb-3 w-75 d-md-flex justify-content-center gap-3 align-items-center">
-                    <div className="">
+                    <div className=" pb-4 mb-3 ">
                         <Ratings item={item} align="center" />
-                        <p>Read Reviews</p>
-                        {/* <button
-                            className="btn btn-outline-dark"
-                            onClick={handleShow}
-                        >
-                            Write a Review
-                        </button> */}
+                        <OffCanvasReviewList
+                            name="Read Reviews"
+                            className="mb-4"
+                            placement="end"
+                        />
                         <Reviews />
                     </div>
                     <RatingDivision rating={item.rating} className="" />
