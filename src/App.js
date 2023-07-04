@@ -9,6 +9,7 @@ import SearchResult from "./components/SearchResult/SearchResult";
 import Contact from "./components/Contact/Contact";
 import FAQs from "./components/FAQs/FAQs";
 import Footer from "./components/Footer/Footer";
+import NotFound from "./components/NotFound/NotFound";
 
 // Custom Designs
 import "./App.css";
@@ -27,6 +28,7 @@ function App() {
                     <Route path="/search/:result" Component={SearchResult} />
                     <Route path="/contact" Component={Contact} />
                     <Route path="/faqs" Component={FAQs} />
+                    <Route path="*" Component={NotFound} />
                 </Routes>
                 <Footer />
             </div>
