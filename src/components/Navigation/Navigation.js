@@ -8,7 +8,7 @@ import {
     Dropdown,
 } from "react-bootstrap";
 import { IconContext } from "react-icons";
-import { AiOutlineShopping, AiOutlineBell } from "react-icons/ai";
+import { AiOutlineShopping } from "react-icons/ai";
 import { IoShapesOutline } from "react-icons/io5";
 import { FaMosque } from "react-icons/fa";
 import { BiPaint } from "react-icons/bi";
