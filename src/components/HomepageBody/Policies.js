@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { AiOutlineTrophy, AiOutlineStar } from "react-icons/ai";
+import { AiOutlineStar } from "react-icons/ai";
 import { LiaShippingFastSolid } from "react-icons/lia";
-import { BiSupport } from "react-icons/bi";
+import { BiSupport, BiPaint } from "react-icons/bi";
 import { IconContext } from "react-icons";
 
 const Policies = () => {
@@ -15,7 +15,7 @@ const Policies = () => {
                     filter: "grayscale(60%) brightness(0.9)",
                 }}
             >
-                <Policy title="Featured Artists" icon={<AiOutlineTrophy />} />
+                <Policy title="Featured Artists" icon={<BiPaint />} />
                 <Policy
                     title="Free Worldwide Shipping"
                     icon={<LiaShippingFastSolid />}
