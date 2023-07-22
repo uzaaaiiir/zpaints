@@ -1,9 +1,16 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Contact = () => {
+    const [formSubmitted, setFormSubmitted] = useState(false);
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        setFormSubmitted(true);
+        console.log(formSubmitted);
+    };
 
     return (
         <section class="container mb-4">
@@ -12,7 +19,10 @@ const Contact = () => {
                     <h1 class="align-self-center text-center px-5 py-3 heading-primary">
                         CONTACT US
                     </h1>
-                    <ContactForm />
+                    <ContactForm
+                        onSubmit={onSubmit}
+                        formSubmitted={formSubmitted}
+                    />
                     <Location style={{ fontFamily: "Raleway,sans-serif" }} />
                 </div>
             </div>
@@ -20,68 +30,85 @@ const Contact = () => {
     );
 };
 
-const ContactForm = () => {
+const ContactForm = ({ onSubmit, formSubmitted }) => {
     return (
-        <div class="col-lg-6 mb-4 align-self-center">
-            <div class="container py-4">
-                <form id="contactForm">
-                    <div class="mb-3">
-                        <label class="form-label heading-tertiary" for="name">
-                            Name
-                        </label>
-                        <input
-                            class="form-control heading-tertiary rounded-0"
-                            id="name"
-                            type="text"
-                            placeholder="Name"
-                            data-sb-validations="required"
-                        />
-                    </div>
+        <div class={`col-lg-6 mb-4 align-self-center`}>
+            {!formSubmitted && (
+                <div class="container py-4">
+                    <form id="contactForm" onSubmit={(e) => onSubmit(e)}>
+                        <div class="mb-3">
+                            <label
+                                class="form-label heading-tertiary"
+                                for="name"
+                            >
+                                Name
+                            </label>
+                            <input
+                                class="form-control heading-tertiary rounded-0"
+                                required
+                                id="name"
+                                type="text"
+                                placeholder="Name"
+                                data-sb-validations="required"
+                            />
+                        </div>
 
-                    <div class="mb-3">
-                        <label
-                            class="form-label heading-tertiary"
-                            for="emailAddress"
-                        >
-                            Email Address
-                        </label>
-                        <input
-                            class="form-control heading-tertiary rounded-0"
-                            id="emailAddress"
-                            type="email"
-                            placeholder="Email Address"
-                            data-sb-validations="required, email"
-                        />
-                    </div>
+                        <div class="mb-3">
+                            <label
+                                class="form-label heading-tertiary"
+                                for="emailAddress"
+                            >
+                                Email Address
+                            </label>
+                            <input
+                                class="form-control heading-tertiary rounded-0"
+                                required
+                                id="emailAddress"
+                                type="email"
+                                placeholder="Email Address"
+                                data-sb-validations="required, email"
+                            />
+                        </div>
 
-                    <div class="mb-3">
-                        <label
-                            class="form-label heading-tertiary"
-                            for="message"
-                        >
-                            Message
-                        </label>
-                        <textarea
-                            class="form-control heading-tertiary rounded-0"
-                            id="message"
-                            type="text"
-                            placeholder="Message"
-                            style={{ height: "10rem" }}
-                            data-sb-validations="required"
-                        ></textarea>
-                    </div>
+                        <div class="mb-3">
+                            <label
+                                class="form-label heading-tertiary"
+                                for="message"
+                            >
+                                Message
+                            </label>
+                            <textarea
+                                class="form-control heading-tertiary rounded-0"
+                                required
+                                id="message"
+                                type="text"
+                                placeholder="Message"
+                                style={{ height: "10rem" }}
+                                data-sb-validations="required"
+                            ></textarea>
+                        </div>
 
-                    <div class="d-flex justify-content-center">
-                        <button
-                            class="btn btn-dark btn-lg py-2 px-4 heading-tertiary rounded-0"
-                            style={{ fontFamily: "Raleway, sans-serif" }}
-                            type="submit"
-                        >
-                            Submit
-                        </button>
-                    </div>
-                </form>
-            </div>
+                        <div class="d-flex justify-content-center">
+                            <button
+                                class="btn btn-dark btn-lg py-2 px-4 heading-tertiary rounded-0"
+                                style={{ fontFamily: "Raleway, sans-serif" }}
+                                type="submit"
+                            >
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            )}
+            {formSubmitted && (
+                <p
+                    style={{ fontFamily: "Raleway, sans-serif" }}
+                    className="fs-4 align-top"
+                >
+                    Thanks for getting in touch with us! We will be in touch
+                    with you within <strong>24 hours</strong>.
+                </p>
+            )}
         </div>
     );
 };
