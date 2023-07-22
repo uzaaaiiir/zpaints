@@ -164,10 +164,10 @@ const Navigation = () => {
                             </Container>
                         </NavDropdown>
                         <Link
-                            to="/workshops"
+                            to="/custom"
                             className="nav-link nav-item nav-item--underline"
                         >
-                            Workshops
+                            Custom Design
                         </Link>
                         <Link
                             to="faqs"
