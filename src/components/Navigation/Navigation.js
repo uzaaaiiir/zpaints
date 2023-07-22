@@ -9,7 +9,10 @@ import {
 } from "react-bootstrap";
 import { IconContext } from "react-icons";
 import { AiOutlineShopping, AiOutlineBell } from "react-icons/ai";
+import { IoShapesOutline } from "react-icons/io5";
+import { FaMosque } from "react-icons/fa";
 import { BiPaint } from "react-icons/bi";
+import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
 import logo from "../../assets/logos/logo-png.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
@@ -88,7 +91,7 @@ const Navigation = () => {
 
                                         <Dropdown.Divider className="mt-3" />
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
-                                            <AiOutlineBell />
+                                            <FaMosque />
                                             Architecture
                                         </Dropdown.Header>
                                         <Dropdown.Item>
@@ -114,8 +117,8 @@ const Navigation = () => {
 
                                     <Col xs="12" md="6" className="text-left">
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
-                                            <AiOutlineBell />
-                                            Geometric Designs
+                                            <IoShapesOutline />
+                                            Geometry
                                         </Dropdown.Header>
                                         <Dropdown.Item>
                                             <Link
@@ -137,7 +140,7 @@ const Navigation = () => {
                                         </Dropdown.Item>
                                         <Dropdown.Divider className="mt-3" />
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
-                                            <AiOutlineBell />
+                                            <HiOutlineDotsCircleHorizontal />
                                             {"  "}
                                             Other
                                         </Dropdown.Header>
