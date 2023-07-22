@@ -76,6 +76,7 @@ const FilterDropdown = ({ title, filters, clickFn }) => {
                     <ListGroup.Item
                         className="d-flex gap-3"
                         eventKey={filter}
+                        key={filter}
                         title={title}
                     >
                         <input

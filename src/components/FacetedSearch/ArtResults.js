@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 import "./art-results-styles.css";
 
 const ArtResults = ({ dataToPresent }) => {
-    const result = dataToPresent.map((data) => <ArtItemCard data={data} />);
+    const result = dataToPresent.map((data, index) => (
+        <ArtItemCard data={data} key={index} />
+    ));
 
     // States used for Pagination
     const [currentPage, setCurrentPage] = useState(1);
