@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 const Contact = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <section class="container mb-4">
             <div class="container px-0">

@@ -1,12 +1,16 @@
 import { Container } from "react-bootstrap";
 import Dropdowns from "./Dropdowns";
 import "./styles.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { data } from "../data.js";
 import Badges from "./Badges";
 import ArtResults from "./ArtResults";
 
 const FacetedSearch = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     /* FACETED SEARCH filters */
     const [appliedFilters, setAppliedFilters] = useState([]);
 

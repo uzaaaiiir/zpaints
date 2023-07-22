@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { data } from "../data.js";
 import { Container } from "react-bootstrap";
+import { useEffect } from "react";
+import { data } from "../data.js";
 import { BiArrowBack } from "react-icons/bi";
 import RatingDivision from "./RatingDivision.js";
 import Ratings from "./Ratings.js";
@@ -10,6 +11,10 @@ import Reviews from "./Reviews.js";
 import OffCanvasReviewList from "./OffCanvasReviewList.js";
 
 const SearchResult = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     // Dynamic Data
     const { result } = useParams();
     const item = data.find((item) => item.id === parseInt(result));

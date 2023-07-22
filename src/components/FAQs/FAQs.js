@@ -1,7 +1,12 @@
 import Container from "react-bootstrap/Container";
 import Mediums from "../HomepageBody/Mediums";
+import { useEffect } from "react";
 
 const FAQs = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <Container className="">
             <h1 class="align-self-center text-center px-5 py-5 mb-4 heading-primary">
