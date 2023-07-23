@@ -18,6 +18,7 @@ import Questionnaire from "./components/CustomDesign/Questionnaire.js";
 
 // Not Found Component
 import NotFound from "./components/NotFound/NotFound";
+import Progress from "./components/NotFound/Progress";
 
 // Custom Designs
 import "./App.css";
@@ -42,6 +43,7 @@ function App() {
                     <Route path="/questionnaire" Component={Questionnaire} />
                     <Route path="/faqs" Component={FAQs} />
                     <Route path="/contact" Component={Contact} />
+                    <Route path="/progress" Component={Progress} />
                     <Route path="*" Component={NotFound} />
                 </Routes>
                 <Footer />

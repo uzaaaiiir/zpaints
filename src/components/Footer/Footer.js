@@ -18,7 +18,7 @@ const Footer = () => {
                         <a href="/index.html" classNameName="">
                             <img
                                 src={logo}
-                                alt=""
+                                alt="Logo of ZPaints Modern Islamic Art Business"
                                 height="150rem"
                                 style={{ stroke: "white", marginBottom: "1em" }}
                             />
@@ -37,7 +37,10 @@ const Footer = () => {
                                             size: "1.8em",
                                         }}
                                     >
-                                        <AiOutlineInstagram />
+                                        <AiOutlineInstagram
+                                            aria-label="Instagram icon"
+                                            role="icon"
+                                        />
                                     </IconContext.Provider>
                                 </a>
                             </li>
@@ -54,7 +57,7 @@ const Footer = () => {
                                             size: "1.8em",
                                         }}
                                     >
-                                        <AiOutlineYoutube />
+                                        <AiOutlineYoutube aria-label="Youtube icon" />
                                     </IconContext.Provider>
                                 </a>
                             </li>
@@ -71,7 +74,7 @@ const Footer = () => {
                                             size: "1.8em",
                                         }}
                                     >
-                                        <PiTiktokLogo />
+                                        <PiTiktokLogo aria-label="TikTok icon" />
                                     </IconContext.Provider>
                                 </a>
                             </li>

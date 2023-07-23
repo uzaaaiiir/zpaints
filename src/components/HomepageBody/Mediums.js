@@ -29,22 +29,30 @@ const Mediums = () => {
             </h2>
             <div className="container row g-4 py-5 row-cols-1 row-cols-lg-4">
                 <Medium
-                    numberIcon={<PiNumberOneLight />}
+                    numberIcon={
+                        <PiNumberOneLight aria-label="Number one icon" />
+                    }
                     title={t("Homepage.Mediums.Poster")}
                     description={t("Homepage.Mediums.PosterDescription")}
                 />
                 <Medium
-                    numberIcon={<PiNumberTwoLight />}
+                    numberIcon={
+                        <PiNumberTwoLight aria-label="Number two icon" />
+                    }
                     title={t("Homepage.Mediums.Frame")}
                     description={t("Homepage.Mediums.FrameDescription")}
                 />
                 <Medium
-                    numberIcon={<PiNumberThreeLight />}
+                    numberIcon={
+                        <PiNumberThreeLight aria-label="Number three icon" />
+                    }
                     title={t("Homepage.Mediums.Canvas")}
                     description={t("Homepage.Mediums.CanvasDescription")}
                 />
                 <Medium
-                    numberIcon={<PiNumberFourLight />}
+                    numberIcon={
+                        <PiNumberFourLight aria-label="Number four icon" />
+                    }
                     title={t("Homepage.Mediums.DigitalCopy")}
                     description={t("Homepage.Mediums.DigitalCopyDescription")}
                 />

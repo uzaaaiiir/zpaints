@@ -43,7 +43,11 @@ const Navigation = () => {
         >
             <Container>
                 <Link to="/" className="me-4">
-                    <img src={logo} alt="" width={245} />
+                    <img
+                        src={logo}
+                        alt="Logo for ZPaints website"
+                        width={245}
+                    />
                 </Link>
                 <Navbar.Toggle aria-controls="navbarScroll" bg="dark" />
                 <Navbar.Collapse
@@ -72,7 +76,7 @@ const Navigation = () => {
                                 <Row>
                                     <Col xs="12" md="6" className="text-left">
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
-                                            <BiPaint />
+                                            <BiPaint aria-label="Paint Brush icon" />
                                             {t(
                                                 "NavigationBar.MegaMenu.Titles.Calligraphy"
                                             )}
@@ -107,7 +111,7 @@ const Navigation = () => {
 
                                         <Dropdown.Divider className="mt-3" />
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
-                                            <FaMosque />
+                                            <FaMosque aria-label="Mosque icon" />
                                             {t(
                                                 "NavigationBar.MegaMenu.Titles.Architecture"
                                             )}
@@ -135,7 +139,7 @@ const Navigation = () => {
 
                                     <Col xs="12" md="6" className="text-left">
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
-                                            <IoShapesOutline />
+                                            <IoShapesOutline aria-label="Geometric Shapes icon" />
                                             {t(
                                                 "NavigationBar.MegaMenu.Titles.Geometry"
                                             )}
@@ -160,7 +164,7 @@ const Navigation = () => {
                                         </Link>
                                         <Dropdown.Divider className="mt-3" />
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
-                                            <HiOutlineDotsCircleHorizontal />
+                                            <HiOutlineDotsCircleHorizontal aria-label="Other Items Three dots icon" />
                                             {"  "}
                                             {t(
                                                 "NavigationBar.MegaMenu.Titles.Other"
@@ -221,7 +225,7 @@ const Navigation = () => {
                                 <IconContext.Provider
                                     value={{ size: "1.5rem" }}
                                 >
-                                    <GrLanguage />
+                                    <GrLanguage aria-label="World Languages icon" />
                                 </IconContext.Provider>
                             }
                             id="basic-nav-dropdown"
@@ -243,9 +247,9 @@ const Navigation = () => {
                                 {t("Languages.Urdu")}
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Link className="link-dark">
+                        <Link className="link-dark" to="/progress">
                             <IconContext.Provider value={{ size: "2rem" }}>
-                                <AiOutlineShopping />
+                                <AiOutlineShopping aria-label="Checkout shopping cart icon" />
                             </IconContext.Provider>
                         </Link>
                     </Nav>

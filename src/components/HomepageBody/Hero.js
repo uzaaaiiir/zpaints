@@ -46,7 +46,7 @@ const Hero = () => {
                     <img
                         src={heroImg}
                         className="d-block mx-lg-auto img-fluid hero-img-filter "
-                        alt=""
+                        alt="Qur'an page with flower on top"
                         width="600"
                         height="400"
                         loading="lazy"

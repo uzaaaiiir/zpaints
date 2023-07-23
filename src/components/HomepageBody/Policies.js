@@ -22,19 +22,23 @@ const Policies = () => {
             >
                 <Policy
                     title={t("Homepage.Policies.FeaturedArtists")}
-                    icon={<BiPaint />}
+                    icon={<BiPaint aria-label="Icon of paint brush" />}
                 />
                 <Policy
                     title={t("Homepage.Policies.Shipping")}
-                    icon={<LiaShippingFastSolid />}
+                    icon={
+                        <LiaShippingFastSolid aria-label="Icon of truck delivering items" />
+                    }
                 />
                 <Policy
                     title={t("Homepage.Policies.Reviews")}
-                    icon={<AiOutlineStar />}
+                    icon={<AiOutlineStar aria-label="Icon of star" />}
                 />
                 <Policy
                     title={t("Homepage.Policies.CustomerSupport")}
-                    icon={<BiSupport />}
+                    icon={
+                        <BiSupport aria-label="Icon of headphones indicating Customer Support" />
+                    }
                 />
             </Row>
         </Container>

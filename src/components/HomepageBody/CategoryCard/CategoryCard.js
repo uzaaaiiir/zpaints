@@ -5,12 +5,16 @@ import "../hero-styles.css";
 
 const CategoryCard = ({ title, imgCategory }) => {
     let category = null;
+    let altText = "";
     if (imgCategory === "all") {
         category = viewAllCategory;
+        altText = "Islamic Calligraphy background";
     } else if (imgCategory === "custom") {
         category = customDesignCategory;
+        altText = "Custom design image of a Mosque";
     } else {
         category = workshopCategory;
+        altText = "Workshop image";
     }
 
     return (
@@ -23,6 +27,8 @@ const CategoryCard = ({ title, imgCategory }) => {
                     backgroundSize: "cover",
                     minHeight: "20rem",
                 }}
+                role="img"
+                aria-label={altText}
             >
                 <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                     <h3 className="pt-5 mt-5 lh-1 fw-bold heading-tertiary fs-1">
