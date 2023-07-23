@@ -27,8 +27,6 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // React Imports
-import { Suspense } from "react";
-import { Spinner } from "react-bootstrap";
 
 function App() {
     return (
@@ -44,7 +42,7 @@ function App() {
                     <Route path="/faqs" Component={FAQs} />
                     <Route path="/contact" Component={Contact} />
                     <Route path="/progress" Component={Progress} />
-                    <Route path="*" Component={NotFound} />
+                    <Route path="/*" Component={NotFound} />
                 </Routes>
                 <Footer />
             </div>
@@ -52,15 +50,4 @@ function App() {
     );
 }
 
-const Loading = () => {
-    return (
-        <Spinner
-            animation="border"
-            role="status"
-            className="justify-content-center align-items-center"
-        >
-            <span className="visually-hidden">Loading...</span>
-        </Spinner>
-    );
-};
 export default App;
