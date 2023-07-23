@@ -10,6 +10,10 @@ import { useLocation } from "react-router-dom";
 const FacetedSearch = () => {
     const filter = useLocation()?.state?.filter;
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     /* FACETED SEARCH filters */
     const [appliedFilters, setAppliedFilters] = useState([]);
 
@@ -63,11 +67,6 @@ const FacetedSearch = () => {
         setAppliedFilters(filters);
         handleImageFiltering(filters);
     };
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        handleChange(filter, true);
-    }, []);
 
     return (
         <Container className="my-5">
