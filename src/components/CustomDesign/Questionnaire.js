@@ -47,7 +47,7 @@ const Questionnaire = () => {
     };
 
     return (
-        <Container className="my-5">
+        <Container className="my-2">
             <h2 className="py-5 heading-secondary text-center">
                 Custom Design Questionnaire
             </h2>

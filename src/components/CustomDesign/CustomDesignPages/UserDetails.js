@@ -1,9 +1,14 @@
 import { Container, Button, Form, Col, Row } from "react-bootstrap";
 import { BiArrowBack } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const UserDetails = ({ onButtonClick, handleFormData, data }) => {
     const navigate = useNavigate();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -11,7 +16,7 @@ const UserDetails = ({ onButtonClick, handleFormData, data }) => {
     };
 
     return (
-        <Container>
+        <Container className="pb-3 mb-3">
             <h2
                 className="pt-3 py-3 mb-2 text-center font-weight-bold"
                 style={{ fontFamily: "Playfair Display, sans-serif" }}

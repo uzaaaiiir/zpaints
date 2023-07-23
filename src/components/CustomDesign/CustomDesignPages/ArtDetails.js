@@ -1,34 +1,102 @@
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Form, Col } from "react-bootstrap";
+import { BiArrowBack } from "react-icons/bi";
+import { useEffect } from "react";
 
 const UserDetails = ({ onButtonClick, onBackClick, handleFormData, data }) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        onButtonClick("pagethree");
+    };
+
+    const onBack = () => {
+        onBackClick("pageone");
+    };
     return (
-        <Container>
-            <div>
-                <h2
-                    className="pt-3 pb-4 text-center font-weight-bold"
-                    style={{ fontFamily: "Playfair Display, sans-serif" }}
+        <Container className="pb-3 mb-3">
+            <h2
+                className="pt-3 pb-4 text-center font-weight-bold"
+                style={{ fontFamily: "Playfair Display, sans-serif" }}
+            >
+                Art Details
+            </h2>
+            <Form
+                style={{ fontFamily: "Raleway, sans-serif" }}
+                onSubmit={(e) => onSubmit(e)}
+            >
+                <Form.Group
+                    as={Col}
+                    className="mb-4 py-2 w-75 mx-auto text-start"
+                    controlId="formPhoneNumber"
                 >
-                    Art Details
-                </h2>
-                <Button
-                    class="btn btn-dark btn-bg px-4 py-3 me-md-2 btn-style rounded-0"
-                    style={{
-                        fontFamily: "Raleway, sans-serif",
-                    }}
-                    onClick={() => onButtonClick("pagethree")}
+                    <Form.Label>
+                        Please select a category of painting you are looking for
+                    </Form.Label>
+                    <Form.Select
+                        className="rounded-0"
+                        autofocus
+                        defaultValue={data.category}
+                        onChange={handleFormData("category")}
+                        required
+                    >
+                        <option className="rounded-0" value="Calligraphy">
+                            Calligraphy
+                        </option>
+                        <option value="Architecture" className="rounded-0">
+                            Architecture
+                        </option>
+                        <option value="Geometric">Geometric Shapes</option>
+                        <option value="Other">Other</option>
+                    </Form.Select>
+                </Form.Group>
+                <Form.Group
+                    as={Col}
+                    controlId="formFile1"
+                    className="mb-4 py-2 w-75 mx-auto text-start"
                 >
-                    Next
-                </Button>
-                <Button
-                    class="btn btn-dark btn-bg px-4 py-3 me-md-2 btn-style rounded-0"
-                    style={{
-                        fontFamily: "Raleway, sans-serif",
-                    }}
-                    onClick={() => onBackClick("pageone")}
+                    <Form.Label>
+                        Upload an Image{" "}
+                        <span style={{ color: "#AAA" }}>(Optional)</span>
+                    </Form.Label>
+                    <Form.Control
+                        type="file"
+                        accept="image/*"
+                        onChange={handleFormData("image")}
+                    />
+                </Form.Group>
+                <Form.Group
+                    className="mb-3 mb-4 py-2 w-75 mx-auto text-start"
+                    controlId="exampleForm.ControlTextarea1"
                 >
-                    Back
-                </Button>
-            </div>
+                    <Form.Label>
+                        Please provide any additional details which would help
+                        us understand your design requirements
+                    </Form.Label>
+                    <Form.Control as="textarea" rows={3} />
+                </Form.Group>
+                <Container className="d-flex w-75 px-3 py-3 mb-4 justify-content-center align-items-center gap-5">
+                    <div
+                        className="d-flex align-items-center justify-content-center"
+                        style={{
+                            fontFamily: "Raleway, sans-serif",
+                            cursor: "pointer",
+                        }}
+                        onClick={() => onBack()}
+                    >
+                        <BiArrowBack />
+                        <p className="mb-0 ps-2">Back</p>
+                    </div>
+                    <Button
+                        variant="btn btn-dark px-4 py-2 btn-style rounded-0"
+                        type="submit"
+                    >
+                        Next
+                    </Button>
+                </Container>
+            </Form>
         </Container>
     );
 };
