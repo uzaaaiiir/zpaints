@@ -6,6 +6,7 @@ import UserDetails from "./CustomDesignPages/UserDetails";
 import LogisticDetails from "./CustomDesignPages/LogisticDetails";
 import ArtDetails from "./CustomDesignPages/ArtDetails";
 import MeetingSchedule from "./CustomDesignPages/MeetingSchedule";
+import Confirmation from "./CustomDesignPages/Confirmation";
 
 const Questionnaire = () => {
     useEffect(() => {
@@ -18,10 +19,12 @@ const Questionnaire = () => {
         email: "",
         phoneNumber: "",
         image: null,
-        category: "",
+        category: "Calligraphy",
         additionalDetails: "",
-        priceRange: "",
-        medium: "",
+        priceRange: "$100-$200",
+        medium: "Canvas",
+        date: "",
+        time: "",
     });
 
     const handleInput = (input) => (e) => {
@@ -49,7 +52,9 @@ const Questionnaire = () => {
     return (
         <Container className="my-2">
             <h2 className="py-5 heading-secondary text-center">
-                Custom Design Questionnaire
+                {page !== "pagefive"
+                    ? "Custom Design Questionnaire"
+                    : "Design Meeting Confirmed"}
             </h2>
 
             <MultiStepProgressBar page={page} />
@@ -86,6 +91,7 @@ const Questionnaire = () => {
                             data={formData}
                         />
                     ),
+                    pagefive: <Confirmation data={formData} />,
                 }[page]
             }
         </Container>

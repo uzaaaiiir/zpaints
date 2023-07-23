@@ -14,7 +14,7 @@ const MultiStepProgressBar = ({ page }) => {
     } else if (page === "pagefour") {
         stepPercentage = 100;
     } else {
-        stepPercentage = 0;
+        stepPercentage = 100;
     }
 
     return (

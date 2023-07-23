@@ -48,7 +48,7 @@ const UserDetails = ({ onButtonClick, onBackClick, handleFormData, data }) => {
                         <option value="$50-$100" className="rounded-0">
                             {"$50-$100"}
                         </option>
-                        <option value="$100-$200" selected>
+                        <option selected value="$100-$200">
                             {"$100-$200"}
                         </option>
                         <option value="$200+">{"$200+"}</option>
