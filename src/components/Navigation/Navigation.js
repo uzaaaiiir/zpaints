@@ -7,7 +7,6 @@ import {
     Col,
     Dropdown,
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 // React Icons
 import { IconContext } from "react-icons";
@@ -22,6 +21,9 @@ import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
 import logo from "../../assets/logos/logo-png.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
+
+// Rect Router
+import { Link } from "react-router-dom";
 
 // i18n
 import { useTranslation } from "react-i18next";
@@ -83,6 +85,7 @@ const Navigation = () => {
                                         </Dropdown.Header>
                                         <Link
                                             to="/search"
+                                            state={{ filter: "Islamic Verses" }}
                                             className="nav-link"
                                             role="button"
                                         >
@@ -92,6 +95,7 @@ const Navigation = () => {
                                         </Link>
                                         <Link
                                             to="/search"
+                                            state={{ filter: "Sayings" }}
                                             className="nav-link"
                                             role="button"
                                         >
@@ -101,6 +105,7 @@ const Navigation = () => {
                                         </Link>
                                         <Link
                                             to="/search"
+                                            state={{ filter: "Popular Duas" }}
                                             className="nav-link"
                                             role="button"
                                         >
@@ -118,6 +123,7 @@ const Navigation = () => {
                                         </Dropdown.Header>
                                         <Link
                                             to="/search"
+                                            state={{ filter: "Middle Eastern" }}
                                             className="nav-link text-wrap dropdown-item"
                                             role="button"
                                         >
@@ -127,6 +133,7 @@ const Navigation = () => {
                                         </Link>
                                         <Link
                                             to="/search"
+                                            state={{ filter: "Asian" }}
                                             className="nav-link text-wrap dropdown-item"
                                             role="button"
                                         >
@@ -146,6 +153,9 @@ const Navigation = () => {
                                         </Dropdown.Header>
                                         <Link
                                             to="/search"
+                                            state={{
+                                                filter: "Vegetal Patterns",
+                                            }}
                                             className="nav-link dropdown-item"
                                             role="button"
                                         >
@@ -155,6 +165,9 @@ const Navigation = () => {
                                         </Link>
                                         <Link
                                             to="/search"
+                                            state={{
+                                                filter: "Geometric Shapes",
+                                            }}
                                             className="nav-link dropdown-item"
                                             role="button"
                                         >

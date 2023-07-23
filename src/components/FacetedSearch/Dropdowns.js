@@ -80,9 +80,10 @@ const FilterDropdown = ({ title, filters, clickFn }) => {
                         title={title}
                     >
                         <input
-                            className="form-check-input flex-shrink-0"
+                            className="checkbox form-check-input flex-shrink-0"
                             type="checkbox"
                             value={filter}
+                            id={filter}
                             onChange={(event) =>
                                 clickFn(
                                     filter,

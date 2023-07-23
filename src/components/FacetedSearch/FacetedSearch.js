@@ -5,11 +5,10 @@ import { useState, useEffect } from "react";
 import { data } from "../data.js";
 import Badges from "./Badges";
 import ArtResults from "./ArtResults";
+import { useLocation } from "react-router-dom";
 
 const FacetedSearch = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    const filter = useLocation()?.state?.filter;
 
     /* FACETED SEARCH filters */
     const [appliedFilters, setAppliedFilters] = useState([]);
@@ -64,6 +63,11 @@ const FacetedSearch = () => {
         setAppliedFilters(filters);
         handleImageFiltering(filters);
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        handleChange(filter, true);
+    }, []);
 
     return (
         <Container className="my-5">
