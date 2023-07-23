@@ -7,22 +7,36 @@ import {
     Col,
     Dropdown,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+// React Icons
 import { IconContext } from "react-icons";
 import { AiOutlineShopping } from "react-icons/ai";
 import { IoShapesOutline } from "react-icons/io5";
 import { FaMosque } from "react-icons/fa";
 import { BiPaint } from "react-icons/bi";
+import { GrLanguage } from "react-icons/gr";
 import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
+
+// Styles
 import logo from "../../assets/logos/logo-png.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
-import { Link } from "react-router-dom";
+
+// i18n
+import { useTranslation } from "react-i18next";
 
 const Navigation = () => {
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
     return (
         <Navbar
             collapseOnSelect
-            expand="lg"
+            expand="xl"
             fixed="top"
             bg="white"
             className=""
@@ -42,13 +56,13 @@ const Navigation = () => {
                     >
                         <Link
                             to="/search"
-                            className="nav-link nav-item nav-item--underline d-lg-none"
+                            className="nav-link nav-item nav-item--underline d-xl-none"
                         >
-                            Shop Islamic Art
+                            {t("NavigationBar.ShopIslamicArt")}
                         </Link>
                         <NavDropdown
-                            title="Shop Islamic Art"
-                            className="nav-item nav-item--underline d-none d-lg-block"
+                            title={t("NavigationBar.ShopIslamicArt")}
+                            className="nav-item nav-item--underline d-none d-xl-block"
                             navbarScroll
                         >
                             <Container
@@ -59,48 +73,62 @@ const Navigation = () => {
                                     <Col xs="12" md="6" className="text-left">
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
                                             <BiPaint />
-                                            Calligraphy
+                                            {t(
+                                                "NavigationBar.MegaMenu.Titles.Calligraphy"
+                                            )}
                                         </Dropdown.Header>
                                         <Link
                                             to="/search"
                                             className="nav-link"
                                             role="button"
                                         >
-                                            Qur'anic Verses
+                                            {t(
+                                                "NavigationBar.MegaMenu.Items.QuranicVerses"
+                                            )}
                                         </Link>
                                         <Link
                                             to="/search"
                                             className="nav-link"
                                             role="button"
                                         >
-                                            Sayings
+                                            {t(
+                                                "NavigationBar.MegaMenu.Items.Sayings"
+                                            )}
                                         </Link>
                                         <Link
                                             to="/search"
                                             className="nav-link"
                                             role="button"
                                         >
-                                            Popular Duas
+                                            {t(
+                                                "NavigationBar.MegaMenu.Items.PopularDuas"
+                                            )}
                                         </Link>
 
                                         <Dropdown.Divider className="mt-3" />
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
                                             <FaMosque />
-                                            Architecture
+                                            {t(
+                                                "NavigationBar.MegaMenu.Titles.Architecture"
+                                            )}
                                         </Dropdown.Header>
                                         <Link
                                             to="/search"
                                             className="nav-link text-wrap dropdown-item"
                                             role="button"
                                         >
-                                            Middle Eastern
+                                            {t(
+                                                "NavigationBar.MegaMenu.Items.MiddleEastern"
+                                            )}
                                         </Link>
                                         <Link
                                             to="/search"
                                             className="nav-link text-wrap dropdown-item"
                                             role="button"
                                         >
-                                            Asian
+                                            {t(
+                                                "NavigationBar.MegaMenu.Items.Asian"
+                                            )}
                                         </Link>
                                         <Dropdown.Divider className="d-md-none" />
                                     </Col>
@@ -108,41 +136,51 @@ const Navigation = () => {
                                     <Col xs="12" md="6" className="text-left">
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
                                             <IoShapesOutline />
-                                            Geometry
+                                            {t(
+                                                "NavigationBar.MegaMenu.Titles.Geometry"
+                                            )}
                                         </Dropdown.Header>
                                         <Link
                                             to="/search"
                                             className="nav-link dropdown-item"
                                             role="button"
                                         >
-                                            Vegetal Patterns
+                                            {t(
+                                                "NavigationBar.MegaMenu.Items.VegetalPatterns"
+                                            )}
                                         </Link>
                                         <Link
                                             to="/search"
                                             className="nav-link dropdown-item"
                                             role="button"
                                         >
-                                            Geometric Shapes
+                                            {t(
+                                                "NavigationBar.MegaMenu.Items.GeometricShapes"
+                                            )}
                                         </Link>
                                         <Dropdown.Divider className="mt-3" />
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
                                             <HiOutlineDotsCircleHorizontal />
                                             {"  "}
-                                            Other
+                                            {t(
+                                                "NavigationBar.MegaMenu.Titles.Other"
+                                            )}
                                         </Dropdown.Header>
                                         <Link
                                             to="/custom"
                                             className="nav-link text-wrap dropdown-item"
                                             role="button"
                                         >
-                                            Custom Design
+                                            {t("NavigationBar.CustomDesign")}
                                         </Link>
                                         <Link
                                             to="/search"
                                             className="nav-link text-wrap dropdown-item"
                                             role="button"
                                         >
-                                            {">>"} View All Paintings
+                                            {t(
+                                                "NavigationBar.MegaMenu.Items.ViewAll"
+                                            )}
                                         </Link>
                                     </Col>
                                 </Row>
@@ -152,32 +190,59 @@ const Navigation = () => {
                             to="/custom"
                             className="nav-link nav-item nav-item--underline"
                         >
-                            Custom Design
+                            {t("NavigationBar.CustomDesign")}
                         </Link>
                         <Link
                             to="faqs"
                             className="nav-link nav-item nav-item--underline"
                         >
-                            FAQs
+                            {t("NavigationBar.FAQs")}
                         </Link>
                         <Link
                             to="contact"
                             className="nav-link nav-item nav-item--underline"
                         >
-                            Contact
+                            {t("NavigationBar.Contact")}
                         </Link>
                         <Link
                             to="/search"
                             class="btn-nav-cta ms-5 px-4 py-3 rounded-0"
                         >
-                            SHOP ALL
+                            {t("NavigationBar.ShopAll")}
                         </Link>
                     </Nav>
                     <Nav className="justify-content-end align-items-center gap-3">
                         <div
-                            className="vr align-self-center d-none d-lg-block me-3"
+                            className="vr align-self-center d-none d-xl-block me-3"
                             style={{ height: "2em" }}
                         ></div>
+                        <NavDropdown
+                            title={
+                                <IconContext.Provider
+                                    value={{ size: "1.5rem" }}
+                                >
+                                    <GrLanguage />
+                                </IconContext.Provider>
+                            }
+                            id="basic-nav-dropdown"
+                            className="rounded-0 w-50 px-0"
+                        >
+                            <NavDropdown.Item
+                                onClick={() => changeLanguage("en")}
+                            >
+                                English
+                            </NavDropdown.Item>
+                            <NavDropdown.Item
+                                onClick={() => changeLanguage("fr")}
+                            >
+                                French
+                            </NavDropdown.Item>
+                            <NavDropdown.Item
+                                onClick={() => changeLanguage("ur")}
+                            >
+                                Urdu
+                            </NavDropdown.Item>
+                        </NavDropdown>
                         <Link className="link-dark">
                             <IconContext.Provider value={{ size: "2rem" }}>
                                 <AiOutlineShopping />
