@@ -60,6 +60,12 @@
             "Sun": "DIM"
         }
     },
+    "Footer": {
+        "Hours": "Heures",
+        "MonFri": "LUN-VEN",
+        "Sat": "SAM",
+        "Sun": "DIM"
+    },
     "Languages": {
         "English": "Anglaise",
         "French": "Français",

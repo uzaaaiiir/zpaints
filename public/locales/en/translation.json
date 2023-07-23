@@ -52,13 +52,13 @@
             "CanvasDescription": "Canvas is wrapped around a gallery style wooden frame. Delivered ready-to-hang.",
             "DigitalCopy": "Digital Copy",
             "DigitalCopyDescription": "Museum-quality digital copy is delivered. Can be printed in any desired size."
-        },
-        "Footer": {
-            "Hours": "Hours",
-            "MonFri": "MON-FRI",
-            "Sat": "SAT",
-            "Sun": "SUN"
         }
+    },
+    "Footer": {
+        "Hours": "Hours",
+        "MonFri": "MON-FRI",
+        "Sat": "SAT",
+        "Sun": "SUN"
     },
     "Languages": {
         "English": "English",

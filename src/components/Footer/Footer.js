@@ -4,7 +4,12 @@ import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
 import { PiTiktokLogo } from "react-icons/pi";
 import { IconContext } from "react-icons";
 
+// i18n
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <Container fluid style={{ backgroundColor: "#1e1b4b" }}>
             <footer className="pt-5 pb-3">
@@ -99,23 +104,28 @@ const Footer = () => {
                                 fontFamily: "Raleway, sans-serif",
                                 color: "white",
                                 textAlign: "start",
+                                textTransform: "uppercase",
                             }}
                             className="mb-3"
                         >
-                            HOURS
+                            {t("Footer.Hours")}
                         </h5>
                         <div className="d-flex align-items-center mb-2">
                             <h6 className="footer-address me-3 mb-1">
-                                MON-FRI
+                                {t("Footer.MonFri")}
                             </h6>
                             <p className="footer-address mb-1">11AM - 8PM</p>
                         </div>
                         <div className="d-flex align-items-center mb-2">
-                            <h6 className="footer-address me-3 mb-1">SAT</h6>
+                            <h6 className="footer-address me-3 mb-1">
+                                {t("Footer.Sat")}
+                            </h6>
                             <p className="footer-address mb-1">11AM - 8PM</p>
                         </div>
                         <div className="d-flex align-items-center mb-2">
-                            <h6 className="footer-address me-3 mb-1">SUN</h6>
+                            <h6 className="footer-address me-3 mb-1">
+                                {t("Footer.Sun")}
+                            </h6>
                             <p className="footer-address mb-1">11AM - 8PM</p>
                         </div>
                     </div>
