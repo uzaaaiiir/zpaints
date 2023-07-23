@@ -31,6 +31,8 @@ const Questionnaire = () => {
             ...prevState,
             [input]: value,
         }));
+
+        console.log(formData);
     };
 
     /** MULTI PAGE PROGRESS BAR CONTROL */
@@ -53,23 +55,35 @@ const Questionnaire = () => {
             <MultiStepProgressBar page={page} />
             {
                 {
-                    pageone: <UserDetails onButtonClick={nextPage} />,
-                    pagetwo: (
-                        <LogisticDetails
+                    pageone: (
+                        <UserDetails
                             onButtonClick={nextPage}
-                            onBackClick={prevPage}
+                            handleFormData={handleInput}
+                            data={formData}
                         />
                     ),
-                    pagethree: (
+                    pagetwo: (
                         <ArtDetails
                             onButtonClick={nextPage}
                             onBackClick={prevPage}
+                            handleFormData={handleInput}
+                            data={formData}
+                        />
+                    ),
+                    pagethree: (
+                        <LogisticDetails
+                            onButtonClick={nextPage}
+                            onBackClick={prevPage}
+                            handleFormData={handleInput}
+                            data={formData}
                         />
                     ),
                     pagefour: (
                         <MeetingSchedule
                             onButtonClick={nextPage}
                             onBackClick={prevPage}
+                            handleFormData={handleInput}
+                            data={formData}
                         />
                     ),
                 }[page]
