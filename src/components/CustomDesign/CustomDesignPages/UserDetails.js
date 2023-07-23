@@ -29,7 +29,10 @@ const UserDetails = ({ onButtonClick, handleFormData, data }) => {
             >
                 <Row className="mb-4 py-2 mx-auto w-75 text-start">
                     <Form.Group as={Col}>
-                        <Form.Label>First Name</Form.Label>
+                        <Form.Label>
+                            First Name{" "}
+                            <span style={{ color: "#AAA" }}>(Required)</span>
+                        </Form.Label>
                         <Form.Control
                             required
                             type="text"
@@ -41,7 +44,10 @@ const UserDetails = ({ onButtonClick, handleFormData, data }) => {
                         />
                     </Form.Group>
                     <Form.Group as={Col}>
-                        <Form.Label>Last Name</Form.Label>
+                        <Form.Label>
+                            Last Name{" "}
+                            <span style={{ color: "#AAA" }}>(Required)</span>
+                        </Form.Label>
                         <Form.Control
                             required
                             placeholder="Last name"
@@ -58,7 +64,10 @@ const UserDetails = ({ onButtonClick, handleFormData, data }) => {
                         className="mb-3 w-75"
                         controlId="formPhoneNumber"
                     >
-                        <Form.Label>Phone Number</Form.Label>
+                        <Form.Label>
+                            Phone Number{" "}
+                            <span style={{ color: "#AAA" }}>(Required)</span>
+                        </Form.Label>
                         <Form.Control
                             required
                             placeholder="647-557-1021"
@@ -74,7 +83,10 @@ const UserDetails = ({ onButtonClick, handleFormData, data }) => {
                         className="mb-3 w-75"
                         controlId="formEmailAddress"
                     >
-                        <Form.Label>Email Address</Form.Label>
+                        <Form.Label>
+                            Email Address{" "}
+                            <span style={{ color: "#AAA" }}>(Required)</span>
+                        </Form.Label>
                         <Form.Control
                             placeholder="zpaints@gmail.com"
                             defaultValue={data.email}

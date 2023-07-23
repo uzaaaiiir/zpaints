@@ -33,7 +33,8 @@ const UserDetails = ({ onButtonClick, onBackClick, handleFormData, data }) => {
                     controlId="formPhoneNumber"
                 >
                     <Form.Label>
-                        Please select a category of painting you are looking for
+                        Please select a category of painting you are looking for{" "}
+                        <span style={{ color: "#AAA" }}>(Required)</span>
                     </Form.Label>
                     <Form.Select
                         className="rounded-0"
@@ -73,9 +74,17 @@ const UserDetails = ({ onButtonClick, onBackClick, handleFormData, data }) => {
                 >
                     <Form.Label>
                         Please provide any additional details which would help
-                        us understand your design requirements
+                        us understand your design requirements{" "}
+                        <span style={{ color: "#AAA" }}>(Optional)</span>
                     </Form.Label>
-                    <Form.Control as="textarea" rows={3} />
+                    <Form.Control
+                        as="textarea"
+                        rows={3}
+                        className="rounded-0"
+                        placeholder="Enter details here"
+                        defaultValue={data.additionalDetails}
+                        onChange={handleFormData("additionalDetails")}
+                    />
                 </Form.Group>
                 <Container className="d-flex w-75 px-3 py-3 mb-4 justify-content-center align-items-center gap-5">
                     <div
