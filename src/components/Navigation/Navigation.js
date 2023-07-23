@@ -230,17 +230,17 @@ const Navigation = () => {
                             <NavDropdown.Item
                                 onClick={() => changeLanguage("en")}
                             >
-                                English
+                                {t("Languages.English")}
                             </NavDropdown.Item>
                             <NavDropdown.Item
                                 onClick={() => changeLanguage("fr")}
                             >
-                                French
+                                {t("Languages.French")}
                             </NavDropdown.Item>
                             <NavDropdown.Item
                                 onClick={() => changeLanguage("ur")}
                             >
-                                Urdu
+                                {t("Languages.Urdu")}
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Link className="link-dark">

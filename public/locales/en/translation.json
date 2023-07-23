@@ -59,5 +59,10 @@
             "Sat": "SAT",
             "Sun": "SUN"
         }
+    },
+    "Languages": {
+        "English": "English",
+        "French": "French",
+        "Urdu": "Urdu"
     }
 }

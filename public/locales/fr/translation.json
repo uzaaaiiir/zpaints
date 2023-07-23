@@ -59,5 +59,10 @@
             "Sat": "SAM",
             "Sun": "DIM"
         }
+    },
+    "Languages": {
+        "English": "Anglaise",
+        "French": "Français",
+        "Urdu": "Ourdou"
     }
 }
