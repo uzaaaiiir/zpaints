@@ -4,7 +4,12 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 import { BiSupport, BiPaint } from "react-icons/bi";
 import { IconContext } from "react-icons";
 
+// i18n
+import { useTranslation } from "react-i18next";
+
 const Policies = () => {
+    const { t } = useTranslation();
+
     return (
         <Container fluid className="mb-5 pb-5 py-4">
             <Row
@@ -15,13 +20,22 @@ const Policies = () => {
                     filter: "grayscale(60%) brightness(0.9)",
                 }}
             >
-                <Policy title="Featured Artists" icon={<BiPaint />} />
                 <Policy
-                    title="Free Worldwide Shipping"
+                    title={t("Homepage.Policies.FeaturedArtists")}
+                    icon={<BiPaint />}
+                />
+                <Policy
+                    title={t("Homepage.Policies.Shipping")}
                     icon={<LiaShippingFastSolid />}
                 />
-                <Policy title="5 Star Reviews" icon={<AiOutlineStar />} />
-                <Policy title="Fast Customer Support" icon={<BiSupport />} />
+                <Policy
+                    title={t("Homepage.Policies.Reviews")}
+                    icon={<AiOutlineStar />}
+                />
+                <Policy
+                    title={t("Homepage.Policies.CustomerSupport")}
+                    icon={<BiSupport />}
+                />
             </Row>
         </Container>
     );

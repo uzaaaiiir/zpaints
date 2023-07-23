@@ -7,33 +7,46 @@ import {
 } from "react-icons/pi";
 import { IconContext } from "react-icons";
 
+// i18n
+import { useTranslation } from "react-i18next";
+
 const Mediums = () => {
+    const { t } = useTranslation();
+
     return (
         <Container className="mb-5">
-            <p className="mb-0 heading-tertiary text-start">
-                OUR DELIVERY MEDIUMS
+            <p
+                className="mb-0 heading-tertiary text-start"
+                style={{ textTransform: "uppercase" }}
+            >
+                {t("Homepage.Mediums.MediumsSubheading")}
             </p>
-            <h2 className="pb-2 heading-secondary text-start">WE OFFER</h2>
+            <h2
+                className="pb-2 heading-secondary text-start"
+                style={{ textTransform: "uppercase" }}
+            >
+                {t("Homepage.Mediums.MediumsHeading")}
+            </h2>
             <div className="container row g-4 py-5 row-cols-1 row-cols-lg-4">
                 <Medium
                     numberIcon={<PiNumberOneLight />}
-                    title="Poster"
-                    description="Museum-quality print with matte finish. Delivered flat or rolled. Use your choice of frame."
+                    title={t("Homepage.Mediums.Poster")}
+                    description={t("Homepage.Mediums.PosterDescription")}
                 />
                 <Medium
                     numberIcon={<PiNumberTwoLight />}
-                    title="Frame"
-                    description="Museum-quality print is custom framed with a white mount. Five frame colors available. Delivered ready-to-hang."
+                    title={t("Homepage.Mediums.Frame")}
+                    description={t("Homepage.Mediums.FrameDescription")}
                 />
                 <Medium
                     numberIcon={<PiNumberThreeLight />}
-                    title="Canvas"
-                    description="Canvas is wrapped around a gallery style wooden frame. Delivered ready-to-hang."
+                    title={t("Homepage.Mediums.Canvas")}
+                    description={t("Homepage.Mediums.CanvasDescription")}
                 />
                 <Medium
                     numberIcon={<PiNumberFourLight />}
-                    title="Digital Copy"
-                    description="Museum-quality digital copy is delivered. Can be printed in any desired size."
+                    title={t("Homepage.Mediums.DigitalCopy")}
+                    description={t("Homepage.Mediums.DigitalCopyDescription")}
                 />
             </div>
         </Container>
