@@ -1,0 +1,63 @@
+{
+    "NavigationBar": {
+        "ShopIslamicArt": "آرٹ خریدیں",
+        "CustomDesign": "مرضی کے ڈیزائن",
+        "FAQs": "سوالات",
+        "Contact": "رابطہ کریں۔",
+        "ShopAll": "خریداری کریں",
+        "MegaMenu": {
+            "Titles": {
+                "Calligraphy": "خطاطی",
+                "Geometry": "جیومیٹری",
+                "Architecture": "فن تعمیر",
+                "Other": "دیگر"
+            },
+            "Items": {
+                "QuranicVerses": "قرآنی آیات",
+                "Sayings": "اقوال",
+                "PopularDuas": "مقبول دعائیں",
+                "MiddleEastern": "مشرق وسطی",
+                "Asian": "ایشیائی",
+                "VegetalPatterns": "سبزیوں کے نمونے",
+                "GeometricShapes": "ہندسی شکلیں",
+                "ViewAll": ">> تمام پینٹنگز دیکھیں"
+            }
+        }
+    },
+    "Homepage": {
+        "Hero": {
+            "HeroTitle": "اعلیٰ معیار کے جدید اسلامی فن پارے پیش کرنا"
+        },
+        "Categories": {
+            "ShowNow": "ابھی خریداری کریں۔",
+            "CategoriesTitle": "اسلامی فن کو زندہ کرنے کے لیے ڈیزائن کیا گیا ہے۔",
+            "ShopCategory": "تمام اسلامی فن کی خریداری کریں۔",
+            "CustomDesignCategory": "مرضی کے مطابق ڈیزائن کی درخواست",
+            "WorkshopCategory": "ورکشاپس"
+        },
+        "Policies": {
+            "FeaturedArtists": "نمایاں فنکار",
+            "Shipping": "مفت دنیا بھر میں شپنگ",
+            "Reviews": "5 ستارہ جائزے",
+            "CustomerSupport": "فاسٹ کسٹمر سپورٹ"
+        },
+        "Mediums": {
+            "MediumsSubheading": "ہمارے ڈیلیوری میڈیم",
+            "MediumsHeading": "ہم پیش کرتے ہیں",
+            "Poster": "پوسٹر",
+            "PosterDescription": "دھندلا ختم کے ساتھ میوزیم کے معیار کا پرنٹ۔ فلیٹ یا رولڈ ڈیلیور کیا گیا۔ اپنی پسند کا فریم استعمال کریں۔",
+            "Frame": "فریم",
+            "FrameDescription": "میوزیم کے معیار کا پرنٹ اپنی مرضی کے مطابق سفید ماؤنٹ کے ساتھ بنایا گیا ہے۔ پانچ فریم رنگ دستیاب ہیں۔ ڈیلیور کرنے کے لیے تیار۔",
+            "Canvas": "کینوس",
+            "CanvasDescription": "کینوس کو گیلری طرز کے لکڑی کے فریم کے گرد لپیٹا گیا ہے۔ ڈیلیور کرنے کے لیے تیار۔",
+            "DigitalCopy": "ڈیجیٹل کاپی",
+            "DigitalCopyDescription": "میوزیم کے معیار کی ڈیجیٹل کاپی فراہم کی جاتی ہے۔ کسی بھی مطلوبہ سائز میں پرنٹ کیا جا سکتا ہے."
+        },
+        "Footer": {
+            "Hours": "گھنٹے",
+            "MonFri": "پیر-جمعہ",
+            "Sat": "ہفتہ",
+            "Sun": "اتوار"
+        }
+    }
+}

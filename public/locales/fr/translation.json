@@ -1,0 +1,63 @@
+{
+    "NavigationBar": {
+        "ShopIslamicArt": "Acheter de L'Art Islamique",
+        "CustomDesign": "Coutume",
+        "FAQs": "FAQ",
+        "Contact": "Contact",
+        "ShopAll": "TOUT MAGASINER",
+        "MegaMenu": {
+            "Titles": {
+                "Calligraphy": "Calligraphie",
+                "Geometry": "Géométrie",
+                "Architecture": "Architecture",
+                "Other": "Autre"
+            },
+            "Items": {
+                "QuranicVerses": "Versets Qoraniques",
+                "Sayings": "Énonciations",
+                "PopularDuas": "Douas Populaires",
+                "MiddleEastern": "Moyen-Orient",
+                "Asian": "Asiatique",
+                "VegetalPatterns": "Motifs Végétaux",
+                "GeometricShapes": "Géométriques",
+                "ViewAll": ">> Voir Tout"
+            }
+        }
+    },
+    "Homepage": {
+        "Hero": {
+            "HeroTitle": "Offrir des pièces d'art islamique moderne de haute qualité"
+        },
+        "Categories": {
+            "ShowNow": "Achetez Maintenant",
+            "CategoriesTitle": "Conçu pour Faire Revivre L'Art Islamique",
+            "ShopCategory": "Acheter Tout L'Art Islamique",
+            "CustomDesignCategory": "Demander Une Conception Personnalisée",
+            "WorkshopCategory": "Ateliers"
+        },
+        "Policies": {
+            "FeaturedArtists": "Artistes en Vedette",
+            "Shipping": "Livraison Gratuite à Travers le Monde",
+            "Reviews": "Avis 5 Étoiles",
+            "CustomerSupport": "Assistance Client Rapide"
+        },
+        "Mediums": {
+            "MediumsSubheading": "Nos Supports de Diffusion",
+            "MediumsHeading": "Nous Offrons",
+            "Poster": "Affiche",
+            "PosterDescription": "Impression de qualité musée avec finition mate. Livré à plat ou roulé. Utilisez votre choix de cadre.",
+            "Frame": "Cadre",
+            "FrameDescription": "L'impression de qualité musée est encadrée sur mesure avec un passe-partout blanc. Cinq couleurs de cadre disponibles. Livré prêt à poser.",
+            "Canvas": "Toile",
+            "CanvasDescription": "La toile est enroulée autour d'un cadre en bois de style galerie. Livré prêt à poser.",
+            "DigitalCopy": "Copie Numérique",
+            "DigitalCopyDescription": "Une copie numérique de qualité musée est livrée. Peut être imprimé dans n'importe quelle taille souhaitée."
+        },
+        "Footer": {
+            "Hours": "Heures",
+            "MonFri": "LUN-VEN",
+            "Sat": "SAM",
+            "Sun": "DIM"
+        }
+    }
+}
