@@ -42,7 +42,7 @@ function App() {
                     <Route path="/faqs" Component={FAQs} />
                     <Route path="/contact" Component={Contact} />
                     <Route path="/progress" Component={Progress} />
-                    <Route path="/*" Component={NotFound} />
+                    <Route path="*" Component={NotFound} />
                 </Routes>
                 <Footer />
             </div>
