@@ -59,7 +59,7 @@ const UserDetails = ({ onButtonClick, handleFormData, data }) => {
                             placeholder="647-557-1021"
                             defaultValue={data.phoneNumber}
                             type="tel"
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{3}[0-9]{3}[0-9]{4}"
                             className="rounded-0"
                             onChange={handleFormData("phoneNumber")}
                         />
