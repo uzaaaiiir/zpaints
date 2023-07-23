@@ -1,0 +1,63 @@
+{
+    "NavigationBar": {
+        "ShopIslamicArt": "Shop Islamic Art",
+        "CustomDesign": "Custom Designs",
+        "FAQs": "FAQs",
+        "Contact": "Contact",
+        "ShopAll": "SHOP ALL",
+        "MegaMenu": {
+            "Titles": {
+                "Calligraphy": "Calligraphy",
+                "Geometry": "Geometry",
+                "Architecture": "Architecture",
+                "Other": "Other"
+            },
+            "Items": {
+                "QuranicVerses": "Qur'anic Verses",
+                "Sayings": "Sayings",
+                "PopularDuas": "Popular Duas",
+                "MiddleEastern": "Middle Eastern",
+                "Asian": "Asian",
+                "VegetalPatterns": "Vegetal Patterns",
+                "GeometricShapes": "Geometric Shapes",
+                "ViewAll": ">> View All Paintings"
+            }
+        }
+    },
+    "Homepage": {
+        "Hero": {
+            "HeroTitle": "Offering High-Quality Modern Islamic Art Pieces"
+        },
+        "Categories": {
+            "ShowNow": "Shop Now",
+            "CategoriesTitle": "Designed to Revive Islamic Art",
+            "ShopCategory": "Shop All Islamic Art",
+            "CustomDesignCategory": "Request Custom Design",
+            "WorkshopCategory": "Workshops"
+        },
+        "Policies": {
+            "FeaturedArtists": "Featured Artists",
+            "Shipping": "Free Worldwide Shipping",
+            "Reviews": "5 Star Reviews",
+            "CustomerSupport": "Fast Customer Support"
+        },
+        "Mediums": {
+            "MediumsSubheading": "Our Delivery Mediums",
+            "MediumsHeading": "We Offer",
+            "Poster": "Poster",
+            "PosterDescription": "Museum-quality print with matte finish. Delivered flat or rolled. Use your choice of frame.",
+            "Frame": "Frame",
+            "FrameDescription": "Museum-quality print is custom framed with a white mount. Five frame colors available. Delivered ready-to-hang.",
+            "Canvas": "Canvas",
+            "CanvasDescription": "Canvas is wrapped around a gallery style wooden frame. Delivered ready-to-hang.",
+            "DigitalCopy": "Digital Copy",
+            "DigitalCopyDescription": "Museum-quality digital copy is delivered. Can be printed in any desired size."
+        },
+        "Footer": {
+            "Hours": "Hours",
+            "MonFri": "MON-FRI",
+            "Sat": "SAT",
+            "Sun": "SUN"
+        }
+    }
+}
