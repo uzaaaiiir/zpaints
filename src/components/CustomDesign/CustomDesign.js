@@ -9,7 +9,10 @@ const CustomDesign = () => {
 
     return (
         <Container className="my-5">
-            <h2 className="py-5 heading-primary text-center">
+            <h2
+                className="py-5 heading-primary text-center"
+                style={{ textTransform: "uppercase" }}
+            >
                 Request a Custom Design
             </h2>
 
