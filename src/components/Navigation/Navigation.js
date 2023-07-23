@@ -61,57 +61,47 @@ const Navigation = () => {
                                             <BiPaint />
                                             Calligraphy
                                         </Dropdown.Header>
-                                        <Dropdown.Item>
-                                            <Link
-                                                to="/search"
-                                                className="nav-link"
-                                                role="button"
-                                            >
-                                                Qur'anic Verses
-                                            </Link>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item>
-                                            <Link
-                                                to="/search"
-                                                className="nav-link"
-                                                role="button"
-                                            >
-                                                Sayings
-                                            </Link>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item>
-                                            <Link
-                                                to="/search"
-                                                className="nav-link"
-                                                role="button"
-                                            >
-                                                Popular Duas
-                                            </Link>
-                                        </Dropdown.Item>
+                                        <Link
+                                            to="/search"
+                                            className="nav-link"
+                                            role="button"
+                                        >
+                                            Qur'anic Verses
+                                        </Link>
+                                        <Link
+                                            to="/search"
+                                            className="nav-link"
+                                            role="button"
+                                        >
+                                            Sayings
+                                        </Link>
+                                        <Link
+                                            to="/search"
+                                            className="nav-link"
+                                            role="button"
+                                        >
+                                            Popular Duas
+                                        </Link>
 
                                         <Dropdown.Divider className="mt-3" />
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
                                             <FaMosque />
                                             Architecture
                                         </Dropdown.Header>
-                                        <Dropdown.Item>
-                                            <Link
-                                                to="/search"
-                                                className="nav-link text-wrap"
-                                                role="button"
-                                            >
-                                                Middle Eastern
-                                            </Link>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item>
-                                            <Link
-                                                to="/search"
-                                                className="nav-link text-wrap"
-                                                role="button"
-                                            >
-                                                Asian
-                                            </Link>
-                                        </Dropdown.Item>
+                                        <Link
+                                            to="/search"
+                                            className="nav-link text-wrap dropdown-item"
+                                            role="button"
+                                        >
+                                            Middle Eastern
+                                        </Link>
+                                        <Link
+                                            to="/search"
+                                            className="nav-link text-wrap dropdown-item"
+                                            role="button"
+                                        >
+                                            Asian
+                                        </Link>
                                         <Dropdown.Divider className="d-md-none" />
                                     </Col>
 
@@ -120,48 +110,40 @@ const Navigation = () => {
                                             <IoShapesOutline />
                                             Geometry
                                         </Dropdown.Header>
-                                        <Dropdown.Item>
-                                            <Link
-                                                to="/search"
-                                                className="nav-link"
-                                                role="button"
-                                            >
-                                                Vegetal Patterns
-                                            </Link>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item>
-                                            <Link
-                                                to="/search"
-                                                className="nav-link"
-                                                role="button"
-                                            >
-                                                Geometric Shapes
-                                            </Link>
-                                        </Dropdown.Item>
+                                        <Link
+                                            to="/search"
+                                            className="nav-link dropdown-item"
+                                            role="button"
+                                        >
+                                            Vegetal Patterns
+                                        </Link>
+                                        <Link
+                                            to="/search"
+                                            className="nav-link dropdown-item"
+                                            role="button"
+                                        >
+                                            Geometric Shapes
+                                        </Link>
                                         <Dropdown.Divider className="mt-3" />
                                         <Dropdown.Header className="d-flex gap-2 align-items-center">
                                             <HiOutlineDotsCircleHorizontal />
                                             {"  "}
                                             Other
                                         </Dropdown.Header>
-                                        <Dropdown.Item>
-                                            <Link
-                                                to="/custom"
-                                                className="nav-link text-wrap"
-                                                role="button"
-                                            >
-                                                Custom Design
-                                            </Link>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item>
-                                            <Link
-                                                to="/search"
-                                                className="nav-link text-wrap"
-                                                role="button"
-                                            >
-                                                {">>"} View All Paintings
-                                            </Link>
-                                        </Dropdown.Item>
+                                        <Link
+                                            to="/custom"
+                                            className="nav-link text-wrap dropdown-item"
+                                            role="button"
+                                        >
+                                            Custom Design
+                                        </Link>
+                                        <Link
+                                            to="/search"
+                                            className="nav-link text-wrap dropdown-item"
+                                            role="button"
+                                        >
+                                            {">>"} View All Paintings
+                                        </Link>
                                     </Col>
                                 </Row>
                             </Container>
