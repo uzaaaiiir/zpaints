@@ -19,6 +19,7 @@ const MediumsDropdown = ({ title, items }) => {
                             id={`default-radio-${i + 1}`}
                             name={title}
                             label={item}
+                            key={i}
                             className="d-flex gap-3 mb-2"
                         />
                     </div>
